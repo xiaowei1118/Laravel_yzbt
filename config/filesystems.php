@@ -61,6 +61,18 @@ return [
             'region' => 'your-region',
             'bucket' => 'your-bucket',
         ],
+        'qiniu' => [
+            'driver'  => 'qiniu',
+            'domains' => [
+                'default'   => 'o7fnmn25g.bkt.clouddn.com', //你的七牛域名
+                'https'     => 'dn-yourdomain.qbox.me',         //你的HTTPS域名
+                'custom'    => 'static.abc.com',                //你的自定义域名
+            ],
+            'access_key'=> 'Xz7r4drmOv95dEGL_PdkBl1imFhJLm8RwCalukLU',  //AccessKey
+            'secret_key'=> 'l5St0JI4kI7wOn3KbQUG5qA47DbKbWV6S1HCLrmV',  //SecretKey
+            'bucket'    => 'yzbt-bucket',  //Bucket名字
+            'notify_url'=> '',  //持久化处理回调地址
+        ],
 
     ],
 

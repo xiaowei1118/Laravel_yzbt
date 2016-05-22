@@ -1,6 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="4f064888-6080-4377-9006-5c5c638c1a33" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/backgrounds/default.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/gallery/imgbox1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/gallery/imgbox2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/gallery/imgbox3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/gallery/imgbox4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/gallery/imgbox5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/breadcrumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/css-border-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/av1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/av2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/av3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/av4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/av5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/demo-image1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/demo-image2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/demo-image3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/demo/envelope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/gritter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/cabinet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/database.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/piechart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/shopping-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/survey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/wallet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/16/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/cabinet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/dashboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/database.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/piechart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/shopping-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/survey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/wallet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/icons/32/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/larrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/login-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/menu-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/rarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/default.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/imgbox1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/imgbox2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/imgbox3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/imgbox4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/imgbox5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/breadcrumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/css-border-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/av1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/av2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/av3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/av4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/av5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/demo-image1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/demo-image2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/demo-image3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/envelope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/gritter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/cabinet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/database.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/piechart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/shopping-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/survey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/wallet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/16/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/cabinet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/dashboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/database.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/graph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/pdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/piechart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/shopping-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/survey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/wallet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/32/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/larrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/login-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/menu-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/rarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/Moxie.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/City.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/SignUpController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Notice.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Service/QiniuService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/SignUp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/buttons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/charts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/chat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/construction.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/jquery.gritter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/maruti-login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/maruti-media.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/maruti-style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/my.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/uniform.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/dashboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/form-common.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/form-validation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/form-wizard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/gallery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/interface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/invoice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap-colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.flot.pie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.gritter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.peity.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.ui.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.uniform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.charts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.dashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.form_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.form_validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.interface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.tables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/maruti.wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/widgets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/config/DataBase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/config/db.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/config/library.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/config/safe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/jquery.gritter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/maruti-login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/maruti-media.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/maruti-style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/my.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/uniform.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap-colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.flot.pie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.gritter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.peity.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.ui.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.uniform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/extend/layer.ext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer/skin/layer.ext.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.charts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.dashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.form_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.form_validation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.interface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.tables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/maruti.wizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/moxie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plupload.dev.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/qiniu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-add.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-banner.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-comment-list.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-del.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-hot.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/notice-list.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/sign-up-baby.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/sign-up.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-add.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-banner.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-comment-list.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-del.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-hot.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/topic-list.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layout/form-footer.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layout/table-footer.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layout/table.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
+    </list>
+    <ignored path="laravel.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +322,99 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="laravel" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="notice-edit.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/notice-edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-104">
+              <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="php artican make:controller LoginController" />
+      <command text="php artisan make:controller LoginController" />
+      <command text="php artisan make:model Admin" />
+      <command text="php artisan make:controller NoticeController" />
+      <command text="php artisan make:model Notice" />
+      <command text="php artisan make:controller SignUpController --resource" />
+      <command text="php artisan make:model SignUp" />
+      <command text="php artisan make:model City" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/layout/header.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Admin.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/Notice.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/exit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/SignUp.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SignUpController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sign-up.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sign-up-baby.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/config/filesystem.php" />
+        <option value="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/table.blade.php" />
+        <option value="$PROJECT_DIR$/app/Service/QiniuService.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/notice-add.blade.php" />
+        <option value="$PROJECT_DIR$/config/filesystems.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/notice-list.blade.php" />
+        <option value="$PROJECT_DIR$/app/City.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/notice-edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -21,17 +426,128 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\laravel\laravel" />
+      <recent name="E:\laravel\laravel\resources\views\admin" />
+      <recent name="E:\laravel\laravel\resources\views\layout" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="4f064888-6080-4377-9006-5c5c638c1a33" name="Default" comment="" />
       <created>1463915814667</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463915814667</updated>
+      <workItem from="1463915816095" duration="2577000" />
+      <workItem from="1463919048448" duration="16974000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19551000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19341564" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25444096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -39,5 +555,909 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/topic-edit.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="false" signature="44:311" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="352:440" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="true" signature="148:299" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="158:251" placeholder=" The names of the cookies that should not be encrypted. ..." />
+            <marker date="1461762072000" expanded="true" signature="279:295" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <marker date="1461762072000" expanded="false" signature="43:88" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="108:675" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="118:303" placeholder=" Handle an incoming request. ..." />
+            <marker date="1461762072000" expanded="true" signature="372:673" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="422:633" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="483:551" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="559:623" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="true" signature="157:310" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="167:262" placeholder=" The URIs that should be excluded from CSRF verification. ..." />
+            <marker date="1461762072000" expanded="true" signature="290:306" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="true" signature="124:135" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <marker date="1463921049953" expanded="true" signature="113:1538" placeholder="{...}" />
+            <marker date="1463921049953" expanded="true" signature="123:290" placeholder=" The application's global HTTP middleware stack. ..." />
+            <marker date="1463921049953" expanded="true" signature="322:406" placeholder="..." />
+            <marker date="1463921049953" expanded="true" signature="417:498" placeholder=" The application's route middleware groups. ..." />
+            <marker date="1463921049953" expanded="true" signature="536:958" placeholder="..." />
+            <marker date="1463921049953" expanded="true" signature="555:891" placeholder="..." />
+            <marker date="1463921049953" expanded="true" signature="913:951" placeholder="..." />
+            <marker date="1463921049953" expanded="true" signature="969:1122" placeholder=" The application's route middleware. ..." />
+            <marker date="1463921049953" expanded="true" signature="1159:1534" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="true" signature="114:448" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="124:203" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1461762072000" expanded="true" signature="233:275" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="286:373" placeholder=" The attributes that should be hidden for arrays. ..." />
+            <marker date="1461762072000" expanded="true" signature="401:444" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <marker date="1463921207170" expanded="true" signature="89:215" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Notice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <marker date="1463922902571" expanded="true" signature="90:443" placeholder="{...}" />
+            <marker date="1463922902571" expanded="true" signature="118:366" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/exit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <marker date="1463921381187" expanded="true" signature="34:1830" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="45:378" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="389:1822" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="413:480" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="508:1810" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="590:1795" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="699:1018" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="742:995" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="795:968" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="1062:1385" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="1105:1362" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="1158:1335" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="1429:1775" placeholder="..." />
+            <marker date="1463921381187" expanded="true" signature="1627:1752" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/table-footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="43" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <marker date="1463912244646" expanded="true" signature="22:95" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <marker date="1463923319226" expanded="true" signature="41:384" placeholder="..." />
+            <marker date="1463923319226" expanded="true" signature="59:382" placeholder="..." />
+            <marker date="1463923319226" expanded="true" signature="87:219" placeholder="..." />
+            <marker date="1463923319226" expanded="true" signature="251:372" placeholder="..." />
+            <marker date="1463923319226" expanded="true" signature="279:363" placeholder="..." />
+            <marker date="1463923319226" expanded="true" signature="306:352" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/routes.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SignUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <marker date="1463924819515" expanded="true" signature="90:271" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <marker date="1463926108446" expanded="false" signature="9:390" placeholder="..." />
+            <marker date="1463926108446" expanded="true" signature="407:729" placeholder="..." />
+            <marker date="1463926108446" expanded="true" signature="424:728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sign-up.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding>
+            <marker date="1463926196668" expanded="true" signature="47:3216" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="65:2714" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="95:269" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="303:2702" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="335:2691" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="368:2676" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="409:2657" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="456:557" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="616:2634" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="688:2607" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="724:1047" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="757:1010" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="1083:2574" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="1171:2535" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="1257:2499" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="1700:2461" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="1910:2161" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="2046:2121" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="2169:2420" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="2305:2380" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="2750:3210" placeholder="..." />
+            <marker date="1463926196668" expanded="true" signature="2817:3195" placeholder="{...}" />
+            <marker date="1463926196668" expanded="true" signature="2927:3183" placeholder="{&quot;type&quot;: 1...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/sign-up-baby.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding>
+            <marker date="1463926205260" expanded="true" signature="47:3302" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="65:2800" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="95:269" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="303:2788" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="335:2777" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="368:2762" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="409:2743" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="456:648" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="707:2720" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="779:2693" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="815:1138" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="848:1101" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="1174:2660" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="1262:2621" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="1348:2585" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="1791:2547" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="1996:2247" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="2132:2207" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="2255:2506" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="2391:2466" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="2836:3296" placeholder="..." />
+            <marker date="1463926205260" expanded="true" signature="2903:3281" placeholder="{...}" />
+            <marker date="1463926205260" expanded="true" signature="3013:3269" placeholder="{&quot;type&quot;: 1...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notice-banner.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1463912244089" expanded="true" signature="57:1281" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="87:265" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="299:1269" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="331:1258" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="364:1243" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="446:1200" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="562:616" placeholder="update tb_pu... " />
+            <marker date="1463912244089" expanded="true" signature="652:1190" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="679:915" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="717:767" placeholder="delete from " />
+            <marker date="1463912244089" expanded="true" signature="938:1176" placeholder="..." />
+            <marker date="1463912244089" expanded="true" signature="976:1032" placeholder="insert into tb_banner... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/src/Qiniu/Http/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/php-sdk/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="true" signature="122:402" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="132:208" placeholder=" Bootstrap any application services. ..." />
+            <marker date="1461762072000" expanded="true" signature="237:260" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="269:344" placeholder=" Register any application services. ..." />
+            <marker date="1461762072000" expanded="true" signature="377:400" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="false" signature="37:175" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="226:692" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="236:315" placeholder=" The policy mappings for the application. ..." />
+            <marker date="1461762072000" expanded="true" signature="345:401" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="412:579" placeholder=" Register any application authentication / authorization services. ..." />
+            <marker date="1461762072000" expanded="true" signature="626:690" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="false" signature="37:183" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="235:730" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="245:332" placeholder=" The event listener mappings for the application. ..." />
+            <marker date="1461762072000" expanded="true" signature="360:455" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="396:448" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="466:618" placeholder=" Register any other events for your application. ..." />
+            <marker date="1461762072000" expanded="true" signature="673:728" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1171">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="false" signature="37:148" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="200:1403" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="210:378" placeholder=" This namespace is applied to your controller routes. ..." />
+            <marker date="1461762072000" expanded="true" signature="440:587" placeholder=" Define your route model bindings, pattern filters, etc. ..." />
+            <marker date="1461762072000" expanded="true" signature="630:685" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="694:824" placeholder=" Define the routes for the application. ..." />
+            <marker date="1461762072000" expanded="true" signature="866:928" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="937:1149" placeholder=" Define the &quot;web&quot; routes for the application. ..." />
+            <marker date="1461762072000" expanded="true" signature="1203:1401" placeholder="{...}" />
+            <marker date="1461762072000" expanded="true" signature="1233:1393" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="1234:1311" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="1334:1392" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="false" signature="9:405" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="490:883" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="903:976" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="996:1075" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="1095:1186" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="1192:1585" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="149" column="48" selection-start-line="149" selection-start-column="48" selection-end-line="149" selection-end-column="48" />
+          <folding>
+            <marker date="1463930517344" expanded="true" signature="15:8312" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="23:451" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="505:928" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="979:1395" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="1455:1879" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="1915:2354" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="2387:2818" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="2860:3281" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="3353:3847" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="3897:4329" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="4353:6034" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="4365:4425" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="5771:5825" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="6044:6458" placeholder="..." />
+            <marker date="1463930517344" expanded="true" signature="6480:8308" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zgldh/qiniu-laravel-storage/src/QiniuFilesystemServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <marker date="1443165120000" expanded="false" signature="41:475" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="537:1949" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="567:1892" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="599:1884" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="659:1874" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="708:776" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="784:998" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="817:979" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="1924:1947" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/filesystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SignUpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1463926171992" expanded="true" signature="44:146" placeholder="..." />
+            <marker date="1463926171992" expanded="true" signature="189:1856" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="199:295" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1463926171992" expanded="true" signature="325:618" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="406:454" placeholder="..." />
+            <marker date="1463926171992" expanded="true" signature="460:539" placeholder="..." />
+            <marker date="1463926171992" expanded="true" signature="627:731" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1463926171992" expanded="true" signature="762:785" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="794:948" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1463926171992" expanded="true" signature="994:1017" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="1026:1143" placeholder=" Display the specified resource. ..." />
+            <marker date="1463926171992" expanded="true" signature="1175:1198" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="1207:1342" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1463926171992" expanded="true" signature="1374:1397" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="1406:1583" placeholder=" Update the specified resource in storage. ..." />
+            <marker date="1463926171992" expanded="true" signature="1635:1658" placeholder="{...}" />
+            <marker date="1463926171992" expanded="true" signature="1667:1796" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1463926171992" expanded="true" signature="1831:1854" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="25" column="11" selection-start-line="22" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <marker date="1463921996280" expanded="true" signature="44:145" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="187:988" placeholder="{...}" />
+            <marker date="1463921996280" expanded="true" signature="218:259" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="290:331" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="379:880" placeholder="{...}" />
+            <marker date="1463921996280" expanded="true" signature="410:507" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="421:506" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="715:776" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="784:873" placeholder="..." />
+            <marker date="1463921996280" expanded="true" signature="911:984" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zgldh/qiniu-laravel-storage/src/QiniuStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+          <folding>
+            <marker date="1443165120000" expanded="true" signature="56:4333" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="164:305" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="209:265" placeholder="..." />
+            <marker date="1443165120000" expanded="true" signature="346:406" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="415:474" placeholder=" 文件是否存在 ..." />
+            <marker date="1443165120000" expanded="true" signature="509:566" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="575:636" placeholder=" 获取文件内容 ..." />
+            <marker date="1443165120000" expanded="true" signature="668:722" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="731:812" placeholder=" 上传文件 ..." />
+            <marker date="1443165120000" expanded="true" signature="855:920" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="929:1014" placeholder=" 附加内容到文件开头 ..." />
+            <marker date="1443165120000" expanded="true" signature="1061:1130" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="1139:1223" placeholder=" 附加内容到文件结尾 ..." />
+            <marker date="1443165120000" expanded="true" signature="1269:1337" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="1346:1403" placeholder=" 删除文件 ..." />
+            <marker date="1443165120000" expanded="true" signature="1438:1496" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="1505:1587" placeholder=" 复制文件到新的路径 ..." />
+            <marker date="1443165120000" expanded="true" signature="1627:1690" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="1699:1781" placeholder=" 移动文件到新的路径 ..." />
+            <marker date="1443165120000" expanded="true" signature="1821:1884" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="1916:1972" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2012:2076" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2109:2165" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2201:2257" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2296:2352" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2394:2450" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2491:2555" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2598:2664" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2673:2735" placeholder=" 获取上传Token ..." />
+            <marker date="1443165120000" expanded="true" signature="2775:2850" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="2859:2919" placeholder=" 获取下载地址 ..." />
+            <marker date="1443165120000" expanded="true" signature="2984:3072" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="3081:3149" placeholder=" 获取私有bucket下载地址 ..." />
+            <marker date="1443165120000" expanded="true" signature="3221:3316" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="3325:3385" placeholder=" 获取图片信息 ..." />
+            <marker date="1443165120000" expanded="true" signature="3423:3496" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="3505:3569" placeholder=" 获取图片EXIF信息 ..." />
+            <marker date="1443165120000" expanded="true" signature="3607:3680" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="3689:3772" placeholder=" 获取图片预览URL ..." />
+            <marker date="1443165120000" expanded="true" signature="3823:3909" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="3918:4001" placeholder=" 执行持久化数据处理 ..." />
+            <marker date="1443165120000" expanded="true" signature="4050:4134" placeholder="{...}" />
+            <marker date="1443165120000" expanded="true" signature="4143:4208" placeholder=" 查看持久化数据处理的状态 ..." />
+            <marker date="1443165120000" expanded="true" signature="4252:4331" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461762072000" expanded="true" signature="52:512" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="562:964" placeholder="..." />
+            <marker date="1461762072000" expanded="true" signature="1049:1077" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <marker date="1463933319234" expanded="true" signature="0:1502" placeholder="{&quot;name&quot;: &quot;laravel/laravel&quot;...}" />
+            <marker date="1463933319234" expanded="true" signature="180:332" placeholder="{&quot;php&quot;: &quot;&gt;=5.5.9&quot;...}" />
+            <marker date="1463933319234" expanded="true" signature="353:559" placeholder="{&quot;fzaninotto/faker&quot;: &quot;~1.4&quot;...}" />
+            <marker date="1463933319234" expanded="true" signature="577:697" placeholder="{...}" />
+            <marker date="1463933319234" expanded="true" signature="599:633" placeholder="[...]" />
+            <marker date="1463933319234" expanded="true" signature="652:691" placeholder="{&quot;App\&quot;: &quot;app/&quot;...}" />
+            <marker date="1463933319234" expanded="true" signature="719:791" placeholder="{...}" />
+            <marker date="1463933319234" expanded="true" signature="741:785" placeholder="[...]" />
+            <marker date="1463933319234" expanded="true" signature="808:1292" placeholder="{...}" />
+            <marker date="1463933319234" expanded="true" signature="847:913" placeholder="[...]" />
+            <marker date="1463933319234" expanded="true" signature="950:1000" placeholder="[...]" />
+            <marker date="1463933319234" expanded="true" signature="1030:1144" placeholder="[...]" />
+            <marker date="1463933319234" expanded="true" signature="1173:1286" placeholder="[...]" />
+            <marker date="1463933319234" expanded="true" signature="1308:1351" placeholder="{&quot;preferred-install&quot;: &quot;dist&quot;...}" />
+            <marker date="1463933319234" expanded="true" signature="1373:1500" placeholder="{...}" />
+            <marker date="1463933319234" expanded="true" signature="1396:1494" placeholder="{&quot;type&quot;: &quot;composer&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+          <folding>
+            <marker date="1458140524000" expanded="true" signature="9:381" placeholder=" @xglobal $GLOBALS array ..." />
+            <marker date="1458140524000" expanded="true" signature="408:714" placeholder=" @xglobal $_COOKIE array ..." />
+            <marker date="1458140524000" expanded="true" signature="741:1080" placeholder=" @xglobal $_ENV array ..." />
+            <marker date="1458140524000" expanded="true" signature="1103:1126" placeholder=" @deprecated 4.1.0 ..." />
+            <marker date="1458140524000" expanded="true" signature="1159:1560" placeholder=" @xglobal $_FILES array ..." />
+            <marker date="1458140524000" expanded="true" signature="1585:1608" placeholder=" @deprecated 4.1.0 ..." />
+            <marker date="1458140524000" expanded="true" signature="1644:1985" placeholder=" @xglobal $_GET array ..." />
+            <marker date="1458140524000" expanded="true" signature="2008:2031" placeholder=" @deprecated 4.1.0 ..." />
+            <marker date="1458140524000" expanded="true" signature="2064:2472" placeholder=" @xglobal $_POST array ..." />
+            <marker date="1458140524000" expanded="true" signature="2496:2519" placeholder=" @deprecated 4.1.0 ..." />
+            <marker date="1458140524000" expanded="true" signature="2553:3336" placeholder="  @xglobal $_REQUEST array ..." />
+            <marker date="1458140524000" expanded="true" signature="3364:3772" placeholder=" @xglobal $_SERVER array ..." />
+            <marker date="1458140524000" expanded="true" signature="3798:3821" placeholder=" @deprecated 4.1.0 ..." />
+            <marker date="1458140524000" expanded="true" signature="5145:5576" placeholder="  @xglobal $_SESSION array ..." />
+            <marker date="1458140524000" expanded="true" signature="5603:5626" placeholder=" @deprecated 4.1.0 ..." />
+            <marker date="1458140524000" expanded="true" signature="5663:5865" placeholder=" @xglobal $argc int ..." />
+            <marker date="1458140524000" expanded="true" signature="5883:6083" placeholder="  @xglobal $argv array ..." />
+            <marker date="1458140524000" expanded="true" signature="6107:6388" placeholder=" @xglobal $HTTP_RAW_POST_DATA string ..." />
+            <marker date="1458140524000" expanded="true" signature="6421:6622" placeholder=" @xglobal $http_response_header array ..." />
+            <marker date="1458140524000" expanded="true" signature="6662:6859" placeholder=" @xglobal $php_errormsg string ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <marker date="1463933731424" expanded="true" signature="112:1532" placeholder="{...}" />
+            <marker date="1463933731424" expanded="true" signature="194:324" placeholder="{...}" />
+            <marker date="1463933731424" expanded="true" signature="258:317" placeholder="..." />
+            <marker date="1463933731424" expanded="true" signature="364:1530" placeholder="{...}" />
+            <marker date="1463933731424" expanded="true" signature="408:451" placeholder="..." />
+            <marker date="1463933731424" expanded="true" signature="879:933" placeholder="..." />
+            <marker date="1463933731424" expanded="true" signature="1038:1096" placeholder="..." />
+            <marker date="1463933731424" expanded="true" signature="1187:1241" placeholder="..." />
+            <marker date="1463933731424" expanded="true" signature="1404:1498" placeholder="..." />
+            <marker date="1463933731424" expanded="true" signature="1614:1792" placeholder="{...}" />
+            <marker date="1463933731424" expanded="true" signature="1689:1789" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1496">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <marker date="1463933890572" expanded="true" signature="34:3712" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="41:702" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="709:3704" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="747:810" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="1413:2058" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="1432:2051" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="1588:1773" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="2076:2230" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="2279:3448" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="2357:3441" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="2557:2652" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="2991:3149" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="3073:3139" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="3158:3433" placeholder="..." />
+            <marker date="1463933890572" expanded="true" signature="3237:3423" placeholder="..." />
+            <marker date="1463933890572" expanded="false" signature="3457:3579" placeholder="//..." />
+            <marker date="1463933890572" expanded="true" signature="3623:3696" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/table.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <marker date="1463933915543" expanded="true" signature="43:461" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service/QiniuService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <marker date="1463934265282" expanded="true" signature="10:86" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1463934265282" expanded="true" signature="118:162" placeholder="..." />
+            <marker date="1463934265282" expanded="true" signature="182:759" placeholder="{...}" />
+            <marker date="1463934265282" expanded="true" signature="280:438" placeholder="{...}" />
+            <marker date="1463934265282" expanded="true" signature="479:571" placeholder="..." />
+            <marker date="1463934265282" expanded="true" signature="605:686" placeholder="..." />
+            <marker date="1463934265282" expanded="true" signature="721:756" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <marker date="1463912244055" expanded="true" signature="30:1480" placeholder="{&quot;runtimes&quot;: 'html5,flash,html4'...}" />
+            <marker date="1463912244055" expanded="true" signature="494:1472" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="540:770" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="615:707" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="817:843" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="892:964" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="1017:1221" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="1268:1294" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="1335:1361" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="1399:1462" placeholder="{...}" />
+            <marker date="1463912244055" expanded="true" signature="1520:1555" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+          <folding>
+            <marker date="1463934980109" expanded="true" signature="15:2526" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="23:504" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="541:974" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="1006:1429" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="1449:2522" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="1471:1556" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="1581:1711" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="1732:1921" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="1944:2514" placeholder="..." />
+            <marker date="1463934980109" expanded="true" signature="2005:2237" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notice-add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2569">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+          <folding>
+            <marker date="1463934606275" expanded="true" signature="42:4184" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="61:3934" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="89:257" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="289:3927" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="317:3918" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="344:3907" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="377:3894" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="418:600" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="454:549" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="653:3875" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="714:3854" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="760:1004" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="864:979" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="1050:1768" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="1172:1743" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="1814:2065" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="1920:2040" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="1980:2013" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2111:2343" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2215:2318" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2389:2619" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2493:2594" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2665:2896" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2771:2871" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="2942:3249" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="3048:3224" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="3295:3606" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="3401:3581" placeholder="..." />
+            <marker date="1463934606275" expanded="true" signature="3651:3830" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notice-list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="53" column="102" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
+          <folding>
+            <marker date="1463935974048" expanded="true" signature="47:6051" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="65:5549" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="95:269" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="303:5537" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="335:5526" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="368:5511" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="409:5492" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="456:659" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="718:5469" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="790:5442" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="826:1560" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="859:1523" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="1596:5409" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="1684:5370" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="1770:5334" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="2986:5296" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="3174:3434" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="3307:3390" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="3442:3702" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="3575:3658" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="3848:4107" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="3978:4063" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="4115:4374" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="4245:4330" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="4486:4755" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="4622:4711" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="4763:5032" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="4899:4988" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="5172:5257" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="5585:6045" placeholder="..." />
+            <marker date="1463935974048" expanded="true" signature="5652:6030" placeholder="{...}" />
+            <marker date="1463935974048" expanded="true" signature="5762:6018" placeholder="{&quot;type&quot;: 1...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/City.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <marker date="1463936348544" expanded="true" signature="88:215" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/0c43ebde4e3a7b3ded7609f938738b6305e38cb2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <marker date="1463935989634" expanded="true" signature="62:5574" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="92:266" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="300:5562" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="332:5551" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="365:5536" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="406:5517" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="453:670" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="729:5494" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="801:5467" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="837:1571" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="870:1534" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="1607:5434" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="1695:5395" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="1781:5359" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="2997:5321" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="3199:3459" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="3332:3415" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="3467:3727" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="3600:3683" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="3873:4132" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4003:4088" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4140:4399" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4270:4355" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4511:4780" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4647:4736" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4788:5057" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="4924:5013" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="5197:5282" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="5610:6070" placeholder="..." />
+            <marker date="1463935989634" expanded="true" signature="5677:6055" placeholder="{...}" />
+            <marker date="1463935989634" expanded="true" signature="5787:6043" placeholder="{&quot;type&quot;: 1...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NoticeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding>
+            <marker date="1463937669311" expanded="true" signature="44:191" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="234:2420" placeholder="{...}" />
+            <marker date="1463937669311" expanded="true" signature="265:366" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="398:676" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="657:669" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="723:1275" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="748:1043" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="759:1042" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1163:1207" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1213:1269" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1308:1657" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1558:1572" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1580:1596" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1617:1630" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1638:1650" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1705:2275" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1730:2025" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="1741:2024" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="2163:2207" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="2213:2269" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="2308:2314" placeholder="..." />
+            <marker date="1463937669311" expanded="true" signature="2317:2418" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notice-edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

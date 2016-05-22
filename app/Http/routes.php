@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group([], function () {
+    Route::get('index',"LoginController@index");
+    Route::post('login','LoginController@tologin');
+    Route::get('login','LoginController@login');
+    Route::get('logout','LoginController@logout');
+
+    Route::resource('notice','NoticeController');
+
+    Route::resource('signup','SignUpController');
 });

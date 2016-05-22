@@ -1,0 +1,7 @@
+.container-fluid .row-fluid:first-child {
+    margin-top: 0px;
+}
+
+.table th, .table td {
+    padding: 0px;
+}
