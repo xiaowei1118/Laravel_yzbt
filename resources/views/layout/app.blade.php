@@ -92,4 +92,10 @@
   <div id="footer" class="span12"> 2016 &copy; YZBT Admin. </div>
 </div>
 </body>
+<script>
+//    $(function () {
+//        $height=$(window).height();
+//        $('#content').css({'height':$height-$('#head').height()-$('#sidebar').height()-95});
+//    });
+</script>
 </html>
