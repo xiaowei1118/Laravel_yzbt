@@ -17,11 +17,11 @@
 //Route::get('logout','LoginController@logout');
 
 Route::auth();
-Route::get('/','HomeController@index');
-Route::get('/home', 'HomeController@index');
 
 Route::group(['middleware'=>'auth'], function () {
-    Route::get('index',"LoginController@index");
+    Route::get('index',"HomeController@index");
+    Route::get('/','HomeController@index');
+    Route::get('/home', 'HomeController@index');
     Route::resource('/notice','NoticeController',['only' => ['index', 'edit','store','update','create']]);
     Route::get('/notice/status/{id}/{field}/{value}','NoticeController@updateBool');
 

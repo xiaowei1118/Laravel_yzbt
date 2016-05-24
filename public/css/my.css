@@ -5,3 +5,7 @@
 .table th, .table td {
     padding: 0px;
 }
+#footer{
+    position: fixed; !important;
+    bottom: 0px; !important;
+}
