@@ -1,9 +1,8 @@
-<?php
-require 'templates/header.php';
-?>
+@extends('layout.app')
+@section('content')
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">通告评论管理</a></div>
+        <div id="breadcrumb"> <a href="{{url('/index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">通告评论管理</a></div>
     </div>
     <div class="container-fluid">
         <div class="row-fluid">
@@ -12,31 +11,15 @@ require 'templates/header.php';
                     <div class="widget-title">
                         <span class="icon"><i class="icon-comment"></i></span>
                         <h5>
-                        <?php 
-                        if(isset($_GET['id'])){
-                            $id = intval($_GET['id']);
-                            $res_1 = $mysql->_doQuery('select * from tb_public_notice_comment where public_notice_id='.$id.' order by create_time desc');
-                            $title = '';
-                            $title_res = $mysql->_doQuery('select title from tb_public_notice where id='.$id);
-                            if(count($title_res)>0)
-                                $title = $title_res[0]['title'];
-                            if(isset($_GET['comment_id'])){
-                                $comment_id = intval($_GET['comment_id']);
-                                $sql = 'delete from tb_public_notice_comment where id='.$comment_id;
-                                if($mysql->_doExec($sql))
-                                    alert_href('删除成功！','notice-comment-list.php?id='.$id);
-                            }
-                        }
-                        echo $title;
-                        ?>    
+
                         </h5>
                     </div>
                     <div class="widget-content nopadding">
                         <ul class="activity-list">
-                        <?php foreach ($res_1 as $row) {?>
+                        <?php foreach ($res as $row) {?>
                             <li>
-                            <a href="notice-comment-list.php?id=<?php echo $id; ?>&comment_id=<?php echo $row['id']?>" onclick="return confirm('确定删除吗？')">
-                            <i class="icon-trash"></i>
+                            <a>
+                            <i class="icon-trash" onclick="deleteComment('{{url("/comment/$row->id/delete")}}');"></i>
                             <?php echo($row['content'].'   发表于:'.$row['create_time'].'');?>
                             </a>
                             </li>
@@ -50,8 +33,26 @@ require 'templates/header.php';
 
     </div>
     <script type="text/javascript">
-        
+        function deleteComment(url){
+           var index= layer.confirm('确定要删除吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                $.ajax({
+                    'url':url,
+                    'type':'get',
+                    'dataType':'json',
+                    success:function (data) {
+                        if(data['status']="success"){
+                            layer.msg('删除成功');
+                            window.location.reload();
+                        }else{
+                            layer.msg('删除失败');
+                        }
+                    }
+                });
+            }, function(){
+                layer.close(index);
+            });
+        }
     </script>
-<?php
-require 'templates/table-footer.php';
-?>
+@endsection

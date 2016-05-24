@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notice;
 use App\SignUp;
 use Illuminate\Http\Request;
 
@@ -17,15 +18,19 @@ class SignUpController extends Controller
      */
     public function index()
     {
-        $notice_id=Input::get('notice_id');
+        $notice_id=Input::get('noticeId');
+
+        $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.is_vote,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
+            ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
+            ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
         if($notice_id==null){
-            $signUpUser=SignUp::get();
+            $list=$list->get();
         }else{
-            $signUpUser=SignUp::where('notice_id',$notice_id)->get();
+            $list=$list->where('pn_id',$notice_id)->get();
         }
         
-        return view('admin.sign-up')->with('res',$signUpUser);
+        return view('admin.sign-up')->with('res',$list);
     }
 
     /**
@@ -92,5 +97,26 @@ class SignUpController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function smallNoticeList(){
+        $notices=Notice::select(['id','title','image_url'])->orderBy('create_time','desc')->get();
+        return view('admin.small-notice-list')->with('res',$notices);
+    }
+
+    public function updateBool($id,$field,$value){
+        $item=SignUp::where('id',$id)->first();
+        $item[$field]=$value;
+        
+        if($item->save()){
+            $message['status']="success";
+            $message['message']="修改状态成功";
+
+        }else{
+            $message['status']="fail";
+            $message['message']="修改状态失败";
+        }
+
+        return $message;
     }
 }

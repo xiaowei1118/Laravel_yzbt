@@ -30,9 +30,15 @@
                 </div>
 
                 <div class="form-actions">
-                    @foreach($errors->all as $item)
-                        {{$item}}
-                    @endforeach
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <span></span>
                     <span class="pull-right">
                         <input name="submit" type="submit" class="btn btn-success" value="登录" />

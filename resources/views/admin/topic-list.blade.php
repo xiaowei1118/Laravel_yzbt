@@ -1,10 +1,8 @@
-<?php
-require 'templates/header.php';
-$res = $mysql->_doQuery('select * from tb_special_topic order by create_time desc');
-?>
+@extends('layout.table')
+@section('table_list')
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">资讯管理</a></div>
+        <div id="breadcrumb"> <a href="{{url('/index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">资讯管理</a></div>
     </div>
     <div class="container-fluid">
         <div class="row-fluid">
@@ -12,7 +10,7 @@ $res = $mysql->_doQuery('select * from tb_special_topic order by create_time des
                 <div class="widget-box">
                     <div class="widget-title">
                         <span class="icon"><i class="icon-th"></i></span>
-                        <a href="topic-add.php" class="btn btn-primary btn-mini">添加资讯</a>
+                        <a href="{{url('/topic/create')}}" class="btn btn-primary btn-default">添加资讯</a>
                     </div>
                     <div class="widget-content nopadding">
                         <table class="table table-bordered data-table">
@@ -37,45 +35,40 @@ $res = $mysql->_doQuery('select * from tb_special_topic order by create_time des
                                 <td><?php echo "<img class='shop_img' src='".$row['image_url']."' width='100' height='100' />" ?></td>
                                 <td><?php echo $row['create_time'] ?></td>
                                 <td><?php echo $row['view_count'] ?></td>
-                                <td><?php echo $row['status']=='0'?'<span class="badge badge-info">禁用</span>':''; ?></td>
-                                <td><?php echo $row['is_hot']=='1'?'<span class="badge badge-warning">热门</span>':''; ?></td>
-                                <td><?php echo $row['is_banner']=='1'?'<span class="badge badge-warning">Banner</span>':''; ?></td>
+                                <td><?php echo $row['status']==0?'<span class="badge badge-info">禁用</span>':''; ?></td>
+                                <td><?php echo $row['is_hot']==1?'<span class="badge badge-warning">热门</span>':''; ?></td>
+                                <td><?php echo $row['is_banner']==1?'<span class="badge badge-warning">Banner</span>':''; ?></td>
                                 <td>
-                                    <a class="btn btn-primary btn-mini" href="<?php echo 'topic-edit.php?id='.$row['id']; ?>">编辑</a>
-
+                                    <a class="btn btn-primary btn-mini" href='{{url("/topic/$row->id/edit")}}'>编辑</a>
                                     <?php if($row['status']=='1'){ ?>
-                                    <a class="btn btn-warning btn-mini" href="<?php echo 'topic-del.php?b=0&id='.$row['id']; ?>">
+                                    <a class="btn btn-warning btn-mini" href='{{url("/topic/status/$row->id/status/0")}}'>
                                        禁用
                                     </a>
                                     <?php } else { ?>
-                                    <a class="btn btn-warning btn-mini" href="<?php echo 'topic-del.php?b=1&id='.$row['id']; ?>">
+                                    <a class="btn btn-warning btn-mini" href='{{url("/topic/status/$row->id/status/1")}}'>
                                        启用
                                     </a>
                                     <?php } ?>
                                     
-                                    <?php if($row['is_hot']=='1'){ ?>
-                                    <a class="btn btn-info btn-mini" href="<?php echo 'topic-hot.php?b=0&id='.$row['id']; ?>">
+                                    <?php if($row['is_hot']==1){ ?>
+                                    <a class="btn btn-info btn-mini" href='{{url("/topic/status/$row->id/is_hot/0")}}'>
                                        取消热门
                                     </a>
                                     <?php } else { ?>
-                                    <a class="btn btn-info btn-mini" href="<?php echo 'topic-hot.php?b=1&id='.$row['id']; ?>">
+                                    <a class="btn btn-info btn-mini" href='{{url("/topic/status/$row->id/is_hot/1")}}'>
                                        设为热门
                                     </a>
                                     <?php } ?>
-
-                                   
-
-                                    <?php if($row['is_banner']=='1'){ ?>
-                                    <a class="btn btn-success btn-mini" href="<?php echo 'topic-banner.php?b=0&id='.$row['id']; ?>">
+                                    <?php if($row['is_banner']==1){ ?>
+                                    <a class="btn btn-success btn-mini" href='{{url("/topic/status/$row->id/is_banner/0")}}'>
                                        取消Banner
                                     </a>
                                     <?php } else { ?>
-                                    <a class="btn btn-success btn-mini" href="<?php echo 'topic-banner.php?b=1&id='.$row['id']; ?>">
+                                    <a class="btn btn-success btn-mini" href='{{url("/topic/status/$row->id/is_banner/1")}}'>
                                        设为Banner
                                     </a>
                                     <?php } ?>
-
-                                    <a class="btn btn-success btn-mini" href="<?php echo 'topic-comment-list.php?id='.$row['id']; ?>">
+                                    <a class="btn btn-success btn-mini" href='{{url("/comment/topicComments")."?parentId=0&topicId=$row->id"}}'>
                                        查看评论
                                     </a>
                                 </td>
@@ -83,6 +76,15 @@ $res = $mysql->_doQuery('select * from tb_special_topic order by create_time des
                             <?php }?>
                             </tbody>
                         </table>
+                        @if (count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -103,6 +105,4 @@ $res = $mysql->_doQuery('select * from tb_special_topic order by create_time des
             });
         });
     </script>
-<?php
-require 'templates/table-footer.php';
-?>
+    @endsection

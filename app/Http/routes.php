@@ -11,13 +11,40 @@
 |
 */
 
-Route::group([], function () {
-    Route::get('index',"LoginController@index");
-    Route::post('login','LoginController@tologin');
-    Route::get('login','LoginController@login');
-    Route::get('logout','LoginController@logout');
 
-    Route::resource('notice','NoticeController');
+//Route::post('login','LoginController@tologin');
+//Route::get('login','LoginController@login');
+//Route::get('logout','LoginController@logout');
+
+Route::auth();
+Route::get('/','HomeController@index');
+Route::get('/home', 'HomeController@index');
+
+Route::group(['middleware'=>'auth'], function () {
+    Route::get('index',"LoginController@index");
+    Route::resource('/notice','NoticeController',['only' => ['index', 'edit','store','update','create']]);
+    Route::get('/notice/status/{id}/{field}/{value}','NoticeController@updateBool');
+
+
+    Route::group(['prefix'=>'comment'],function(){
+        Route::resource('/','CommentController',['only' => ['index', 'edit','store','update','create']]);
+        Route::get('/{id}/delete','CommentController@delete');
+        Route::get('/topicComments','CommentController@topicComments');
+        Route::get('/topicComments/{id}/delete','CommentController@deleteTopicComments');
+    });
 
     Route::resource('signup','SignUpController');
+    Route::get('/signup/status/{id}/{field}/{value}','SignUpController@updateBool');
+
+    Route::get('smallNoticeList','SignUpController@smallNoticeList');
+    Route::resource('topic','TopicController',['only' => ['index', 'edit','store','update','create']]);
+    Route::get('/topic/status/{id}/{field}/{value}','TopicController@updateBool');
+
+    Route::resource('/city','CityController',['only'=>['index']]);
+    Route::get('/city/status/{city_id}/{value}','CityController@updateStatus');
+    Route::get('/city/list/{province}','CityController@getCityByProvince');
+    Route::post('/city/add','CityController@addCity');
+
+    Route::get('/about','MessageController@about');
+    Route::post('/about/update','MessageController@updateAbout');
 });
