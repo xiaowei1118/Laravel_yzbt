@@ -49,6 +49,14 @@ class TopicController extends Controller
         $topic=New Topic();
         $data=Input::all();
         $topic->fill($data);
+
+        if($topic['is_hot']==1){
+            $hotCount=Notice::where('is_hot',1)->count();
+            if($hotCount>=3){
+                return back()->withErrors("热门资讯不可以超过三个");
+            }
+        }
+
         if($topic->save()){
             return $this->index();
         }else{
@@ -84,6 +92,12 @@ class TopicController extends Controller
         $data=Input::all();
 
         $topic->fill($data);
+        if($topic['is_hot']==1){
+            $hotCount=Notice::where('is_hot',1)->where('id',$id)->count();
+            if($hotCount>=3){
+                return back()->withErrors("热门资讯不可以超过三个");
+            }
+        }
         if($topic->save()){
             return $this->index();
         }else{
@@ -94,6 +108,14 @@ class TopicController extends Controller
     public function updateBool($id,$field,$value){
         $notice=Topic::where('id',$id)->first();
         $notice[$field]=$value;
+
+        if($field=="is_hot"&&$value==1){
+            $hotCount=Notice::where('is_hot',1)->count();
+            if($hotCount>=3){
+                return back()->withErrors("热门通告不可以通过三个");
+            }
+        }
+
         if($notice->save()){
             return $this->index();
         }else{

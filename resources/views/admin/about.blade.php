@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-    <div class="row-fluid">
+    <div class="row-fluid" style="margin-top:25px;">
         <div class="span12">
             <div class="widget-box">
                 <div class="widget-title">
