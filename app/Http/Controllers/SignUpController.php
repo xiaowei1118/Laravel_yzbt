@@ -20,7 +20,7 @@ class SignUpController extends Controller
     {
         $notice_id=Input::get('noticeId');
 
-        $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.is_vote,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
+        $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
             ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
             ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
@@ -100,7 +100,7 @@ class SignUpController extends Controller
     }
 
     public function smallNoticeList(){
-        $notices=Notice::select(['id','title','image_url'])->orderBy('create_time','desc')->get();
+        $notices=Notice::select(['id','title','image_url'])->orderBy('create_time','desc')->where('is_apply',1)->get();
         return view('admin.small-notice-list')->with('res',$notices);
     }
 

@@ -2,7 +2,7 @@
 @section('table_list')
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">通告管理</a></div>
+        <div id="breadcrumb"> <a href="{{url('index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">通告管理</a></div>
     </div>
     <div class="container-fluid">
         <div class="row-fluid">
@@ -43,7 +43,7 @@
                                 <td><?php echo $row['city'] ?></td>
                                 <td><?php echo $row['create_time'] ?></td>
                                 <td><?php echo $row['address'] ?></td>
-                                <td><?php echo $row['number'] ?></td>
+                                <td><?php echo $row['max_apply_number'] ?></td>
                                 <td><?php echo $row['registration_time'] ?></td>
                                 <td><?php echo $row['registration_deadline'] ?></td>
                                 <td><?php echo $row['telephone'] ?></td>

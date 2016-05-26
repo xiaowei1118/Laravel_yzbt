@@ -25,7 +25,6 @@
                                 <th>居住地</th>
                                 <th>监护人</th>
                                 <th>监护人手机</th>
-                               {{-- <th>审核状态</th>--}}
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -34,7 +33,13 @@
                                 <tr class="gradeX">
                                 <td>{{$row->id}}</td>
                                 <td>{{$row->name}}</td>
-                                <td><img class='shop_img' src="{{$row->photo_url}}" width='100' height='100' /></td>
+                                <td>
+                                    @if($row->img_url)
+                                        <img class='shop_img' src="{{$row->img_url}}" width='100' height='100' />
+                                    @else
+                                        暂无图片
+                                    @endif
+                                </td>
                                 <td>
                                     @if($row->sex==-1)
                                         未设置
@@ -54,31 +59,17 @@
                                 <td>{{$row->living_city or "--"}}</td>
                                 <td>{{$row->parent_name or "--"}}</td>
                                 <td>{{$row->telephone or "--"}}</td>
-                                {{--<td align="center"><a class="btn btn-info btn-mini">
-                                       @if($row->remark==""||$row->remark==null)
-                                            审核中
-                                       @else
-                                            {{$row->remark}}
-                                       @endif
-                                </a></td>
                                 <td align="center">
-                                    @if($row->status==0)
-                                        <a class="btn btn-success btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/status/1")}}');">
+                                    @if($row->is_vote==0)
+                                        <a class="btn btn-success btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/is_vote/1")}}');">
                                             通过
                                         </a>
-                                        <a class="btn btn-warning btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/status/-1")}}');">
+                                    @elseif($row->is_vote==1)
+                                        <a class="btn btn-warning btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/is_vote/0")}}');">
                                             不通过
-                                        </a>
-                                    @elseif($row->status==1)
-                                        <a class="btn btn-warning btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/status/-1")}}');">
-                                            不通过
-                                        </a>
-                                    @elseif($row->status==-1)
-                                        <a class="btn btn-success btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/status/1")}}');">
-                                            通过
                                         </a>
                                     @endif
-                                </td>--}}
+                                </td>
                                 </tr>
                             @endforeach
                             </tbody>

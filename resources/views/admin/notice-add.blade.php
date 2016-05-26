@@ -72,7 +72,7 @@
                     <div class="control-group" id="apply_number">
                         <label class="control-label">报名人数：</label>
                         <div class="controls">
-                            <input type="number" name="number"/>
+                            <input type="number" name="max_apply_number"/>
                         </div>
                     </div>
                     <div class="control-group">

@@ -51,7 +51,7 @@ class TopicController extends Controller
         $topic->fill($data);
 
         if($topic['is_hot']==1){
-            $hotCount=Notice::where('is_hot',1)->count();
+            $hotCount=Topic::where('is_hot',1)->count();
             if($hotCount>=3){
                 return back()->withErrors("热门资讯不可以超过三个");
             }
@@ -93,7 +93,7 @@ class TopicController extends Controller
 
         $topic->fill($data);
         if($topic['is_hot']==1){
-            $hotCount=Notice::where('is_hot',1)->where('id',$id)->count();
+            $hotCount=Topic::where('is_hot',1)->where('id',$id)->count();
             if($hotCount>=3){
                 return back()->withErrors("热门资讯不可以超过三个");
             }
@@ -110,7 +110,7 @@ class TopicController extends Controller
         $notice[$field]=$value;
 
         if($field=="is_hot"&&$value==1){
-            $hotCount=Notice::where('is_hot',1)->count();
+            $hotCount=Topic::where('is_hot',1)->count();
             if($hotCount>=3){
                 return back()->withErrors("热门通告不可以通过三个");
             }
