@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\QiniuService;
 use App\Topic;
 use Illuminate\Http\Request;
 
@@ -45,7 +44,7 @@ class TopicController extends Controller
             // 'image_url' => 'required',
             'content'=>'required',
         ]);
-
+        
         $topic=New Topic();
         $data=Input::all();
         $topic->fill($data);

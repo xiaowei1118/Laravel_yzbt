@@ -8,7 +8,5 @@ use App\Http\Requests;
 
 class ImageController extends Controller
 {
-    public function uploadImage(){
-        dd(Input::all());
-    }
+
 }
