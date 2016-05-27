@@ -89,8 +89,8 @@
                                        查看评论
                                     </a>
                                     @if($row->is_vote)
-                                        <a class="btn btn-danger btn-mini" href='{{url("/question/topicQuestion")."?topicId=$row->id"}}'>
-                                            设置问题
+                                        <a class="btn btn-danger btn-mini" href='{{url("/question/topicQuestion/$row->id")}}'>
+                                            查看问题
                                         </a>
                                     @endif
                                 </td>

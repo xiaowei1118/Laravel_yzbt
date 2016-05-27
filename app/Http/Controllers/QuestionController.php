@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\AnswerItem;
 use App\AnswerVote;
+use App\Question;
+use App\Topic;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -88,6 +90,7 @@ class QuestionController extends Controller
 
     public function topicQuesion($topicId){
         $questions=Question::where('st_id',$topicId)->get();
+        $topic=Topic::find($topicId);
         foreach ($questions as $question){
             $items=AnswerItem::where('question_id',$question->id)->get();
             foreach($items as $item){
@@ -96,6 +99,6 @@ class QuestionController extends Controller
             $question['items']=$items;
         }
 
-        return view('admin.question-list')->with('questions',$questions);
+        return view('admin.question-list')->with('questions',$questions)->with('topic',$topic);
     }
 }

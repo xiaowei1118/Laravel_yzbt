@@ -25,7 +25,7 @@
                   <div class="control-group">
                     <label class="control-label">图片上传 :</label>
                     <div class="controls" id="container">
-                      <input type="text" name="image_url" class="span6" value="" readonly>
+                      <input type="text" name="image_url" class="span6" value="" required>
                       <div id="filelist"></div>
                       <div id="result"></div>
                       <button type="button" class="btn btn-success btn-mini" id="pickfiles">选择文件</button>

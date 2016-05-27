@@ -49,7 +49,6 @@ Route::group(['middleware'=>'auth'], function () {
     Route::post('/about/update','MessageController@updateAbout');
     Route::get('/baby/mokaimages/{baby_id}','SignUpController@getBabyMokaPicture');
     Route::post('/apply/update/image','SignUpController@updateApplyImage');
-    Route::get('/question/topicQuestion','QuestionController@topicQuesion');
+    Route::get('/question/topicQuestion/{topicId}','QuestionController@topicQuesion');
     Route::resource('/quesion','QuestionControlller');
-    //Route::post('/upload/image','ImageController@uploadImage');
 });

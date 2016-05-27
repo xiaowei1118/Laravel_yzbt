@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
+use App\Services\BannerService;
 use App\Topic;
 use Illuminate\Http\Request;
 
@@ -41,13 +43,15 @@ class TopicController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
-            // 'image_url' => 'required',
+            'image_url' => 'required',
             'content'=>'required',
         ]);
-        
+
+        $user=$request->user();
         $topic=New Topic();
         $data=Input::all();
         $topic->fill($data);
+        $topic->publisher_username=$user->name;
 
         if($topic['is_hot']==1){
             $hotCount=Topic::where('is_hot',1)->count();
@@ -113,6 +117,16 @@ class TopicController extends Controller
             if($hotCount>=3){
                 return back()->withErrors("热门通告不可以通过三个");
             }
+        }
+
+        if($field=="is_banner"&&$value==1){
+            if(!BannerService::checkBannerCount()){
+                return back()->withErrors("Banner页不可以超过六个")->withInput();
+            }else{
+                Banner::create(['type_id'=>$id,'type'=>'pn']);//设置banner
+            }
+        }else if($field=="is_banner"&&$value==0){
+            Banner::where('type_id',$id)->delete();
         }
 
         if($notice->save()){

@@ -25,7 +25,7 @@
                   <div class="control-group">
                     <label class="control-label">图片上传 :</label>
                     <div class="controls" id="container">
-                      <input type="text" name="image_url" class="span6" value="" readonly required>
+                      <input type="text" name="image_url" class="span6" value="" class="readonly" required>
                       <div id="filelist"></div>
                       <div id="result"></div>
                       <button type="button" class="btn btn-success btn-mini" id="pickfiles">选择文件</button>
@@ -88,15 +88,6 @@
                         <label class="control-label">热门：</label>
                         <div class="controls">
                             <select name="is_hot">
-                                <option value="0">否</option>
-                                <option value="1" selected>是</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">Banner?：</label>
-                        <div class="controls">
-                            <select name="is_banner">
                                 <option value="0">否</option>
                                 <option value="1" selected>是</option>
                             </select>
@@ -171,6 +162,10 @@
                 $('#apply_number').hide();
                 $('input[name=number]').attr('disabled',true);
             }
+        });
+
+        $(".readonly").keydown(function(e){
+            e.preventDefault();
         });
     })
 </script>

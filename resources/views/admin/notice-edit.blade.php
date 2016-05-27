@@ -26,7 +26,7 @@
                   <div class="control-group">
                     <label class="control-label">图片上传 :</label>
                     <div class="controls" id="container">
-                      <input type="text" name="image_url" class="span6" value="{{$res['image_url']}}" readonly required>
+                      <input type="text" name="image_url" class="span6" value="{{$res['image_url']}}" required="true" readonly>
                       <div id="filelist"></div>
                       <div id="result"></div>
                       <button type="button" class="btn btn-success btn-mini" id="pickfiles">选择文件</button>
@@ -97,15 +97,6 @@
                             <select name="is_hot">
                                 <option value="0" @if($res['is_hot']==0) selected @endif>否</option>
                                 <option value="1" @if($res['is_hot']==1) selected @endif>是</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">Banner?：</label>
-                        <div class="controls">
-                            <select name="is_banner">
-                                <option value="0" @if($res['is_banner']==0) selected @endif>否</option>
-                                <option value="1" @if($res['is_banner']==1) selected @endif>是</option>
                             </select>
                         </div>
                     </div>
