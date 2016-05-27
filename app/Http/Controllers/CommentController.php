@@ -110,7 +110,7 @@ class CommentController extends Controller
 
         $list=TopicComment::orderBy('create_time','desc');
         if($topicId!=null){
-            $list=$list->where('special_topic_id',$topicId);
+            $list=$list->where('st_id',$topicId);
         }
         if($parentId!=null){
             $list=$list->where('parent_id',$parentId);

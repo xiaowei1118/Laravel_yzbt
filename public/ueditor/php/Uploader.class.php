@@ -332,6 +332,7 @@ class Uploader
             $fullname = '/' . $fullname;
         }
 
+        dd($rootPath.$fullname);
         return $rootPath . $fullname;
     }
 

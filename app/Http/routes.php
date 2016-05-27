@@ -47,4 +47,8 @@ Route::group(['middleware'=>'auth'], function () {
 
     Route::get('/about','MessageController@about');
     Route::post('/about/update','MessageController@updateAbout');
+    Route::get('/baby/mokaimages/{baby_id}','SignUpController@getBabyMokaPicture');
+    Route::post('/apply/update/image','SignUpController@updateApplyImage');
+    Route::get('/question/topicQuestion','QuestionController@topicQuesion');
+    Route::resource('/quesion','QuestionControlller');
 });

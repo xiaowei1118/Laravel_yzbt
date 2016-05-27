@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\ApplyVote;
+use App\Baby;
 use App\Notice;
 use App\SignUp;
 use Illuminate\Http\Request;
@@ -29,7 +31,12 @@ class SignUpController extends Controller
         }else{
             $list=$list->where('pn_id',$notice_id)->get();
         }
-        
+
+        foreach ($list as $item){
+            if($item->is_apply){
+                $item->vote_count=ApplyVote::where("apply_id",$item->apply_id)->count();
+            }
+        }
         return view('admin.sign-up')->with('res',$list);
     }
 
@@ -115,6 +122,30 @@ class SignUpController extends Controller
         }else{
             $message['status']="fail";
             $message['message']="修改状态失败";
+        }
+
+        return $message;
+    }
+
+    public function getBabyMokaPicture($baby_id){
+        $baby=Baby::select(['moka_image_urls'])->where('id',$baby_id)->first();
+
+        $imageUrl=$baby->moka_image_urls;
+        return json_decode($imageUrl);
+    }
+
+    public function updateApplyImage(){
+        $applyId=Input::get('applyId');
+        $image=Input::get('image');
+
+        $sign=SignUp::where('id',$applyId)->first();
+        $sign->image_url=$image;
+        if($sign->save()){
+            $message['status']='success';
+            $message['message']='更换图片成功';
+        }else{
+            $message['status']="fail";
+            $message['message']="更换图片失败";
         }
 
         return $message;

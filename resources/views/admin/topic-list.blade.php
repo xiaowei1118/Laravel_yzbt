@@ -22,6 +22,7 @@
                                 <th>访问量</th>
                                 <th>状态</th>
                                 <th>热门</th>
+                                <th>投票</th>
                                 <th>Banner</th>
                                 <th>操作</th>
                             </tr>
@@ -37,6 +38,11 @@
                                 <td><?php echo $row['view_count'] ?></td>
                                 <td><?php echo $row['status']==0?'<span class="badge badge-info">禁用</span>':''; ?></td>
                                 <td><?php echo $row['is_hot']==1?'<span class="badge badge-warning">热门</span>':''; ?></td>
+                                <td>
+                                    @if($row->is_vote)
+                                        <span class="badge badge-success">可投票</span>
+                                    @endif
+                                </td>
                                 <td><?php echo $row['is_banner']==1?'<span class="badge badge-warning">Banner</span>':''; ?></td>
                                 <td>
                                     <a class="btn btn-primary btn-mini" href='{{url("/topic/$row->id/edit")}}'>编辑</a>
@@ -59,6 +65,7 @@
                                        设为热门
                                     </a>
                                     <?php } ?>
+
                                     <?php if($row['is_banner']==1){ ?>
                                     <a class="btn btn-success btn-mini" href='{{url("/topic/status/$row->id/is_banner/0")}}'>
                                        取消Banner
@@ -68,9 +75,24 @@
                                        设为Banner
                                     </a>
                                     <?php } ?>
+
+                                    @if($row->is_vote)
+                                        <a class="btn btn-warning btn-mini" href='{{url("/topic/status/$row->id/is_vote/0")}}'>
+                                            禁止投票
+                                        </a>
+                                    @else
+                                        <a class="btn btn-warning btn-mini" href='{{url("/topic/status/$row->id/is_vote/1")}}'>
+                                            启用投票
+                                        </a>
+                                    @endif
                                     <a class="btn btn-success btn-mini" href='{{url("/comment/topicComments")."?parentId=0&topicId=$row->id"}}'>
                                        查看评论
                                     </a>
+                                    @if($row->is_vote)
+                                        <a class="btn btn-danger btn-mini" href='{{url("/question/topicQuestion")."?topicId=$row->id"}}'>
+                                            设置问题
+                                        </a>
+                                    @endif
                                 </td>
                                 </tr>
                             <?php }?>

@@ -60,6 +60,12 @@
                     </div>
                   </div>
                     <div class="control-group">
+                        <label class="control-label">通告类型：</label>
+                        <div class="controls">
+                            <input type="text" name="type" class="span10" value="{{$res['type']}}"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
                         <label class="control-label">可报名?：</label>
                         <div class="controls">
                             <select name="is_apply">
@@ -72,7 +78,7 @@
                         <div class="control-group" id="apply_number">
                             <label class="control-label">报名人数：</label>
                             <div class="controls">
-                                <input type="number" name="max_apply_number"/>
+                                <input type="number" name="max_apply_num"/>
                             </div>
                         </div>
                     @endif

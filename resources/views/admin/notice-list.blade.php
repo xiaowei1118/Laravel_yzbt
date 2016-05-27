@@ -43,7 +43,7 @@
                                 <td><?php echo $row['city'] ?></td>
                                 <td><?php echo $row['create_time'] ?></td>
                                 <td><?php echo $row['address'] ?></td>
-                                <td><?php echo $row['max_apply_number'] ?></td>
+                                <td><?php echo $row['max_apply_num'] ?></td>
                                 <td><?php echo $row['registration_time'] ?></td>
                                 <td><?php echo $row['registration_deadline'] ?></td>
                                 <td><?php echo $row['telephone'] ?></td>

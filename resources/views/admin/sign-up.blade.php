@@ -2,7 +2,7 @@
 @section('table_list')
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">报名管理</a></div>
+        <div id="breadcrumb"> <a href="{{url('index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a><a href="#" class="current">报名管理</a></div>
     </div>
     <div class="container-fluid">
         <div class="row-fluid">
@@ -25,13 +25,14 @@
                                 <th>居住地</th>
                                 <th>监护人</th>
                                 <th>监护人手机</th>
+                                <th>投票数</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
                             @foreach($res as $row)
                                 <tr class="gradeX">
-                                <td>{{$row->id}}</td>
+                                <td>{{$row->apply_id}}</td>
                                 <td>{{$row->name}}</td>
                                 <td>
                                     @if($row->img_url)
@@ -39,6 +40,13 @@
                                     @else
                                         暂无图片
                                     @endif
+                                    <a class="btn btn-info btn-mini" style="float:right;margin-right:20px" data-bind="click:getMokaImages.bind($data,'{{$row->id}}','{{$row->apply_id}}')">
+                                        @if($row->img_url)
+                                            修改图片
+                                        @else
+                                            添加图片
+                                        @endif
+                                    </a>
                                 </td>
                                 <td>
                                     @if($row->sex==-1)
@@ -59,6 +67,7 @@
                                 <td>{{$row->living_city or "--"}}</td>
                                 <td>{{$row->parent_name or "--"}}</td>
                                 <td>{{$row->telephone or "--"}}</td>
+                                <td>{{$row->vote_count}}</td>
                                 <td align="center">
                                     @if($row->is_vote==0)
                                         <a class="btn btn-success btn-mini" onclick="updateBool('{{url("/signup/status/$row->apply_id/is_vote/1")}}');">
@@ -89,7 +98,27 @@
         </div>
     </div>
 
-    </div>
+    <div class="container" id="gallery" style="display:none;width: 600px;height:300px;">
+        <div class="row">
+            <div class="">
+                <div class="widget-box">
+                    <div class="widget-content">
+                        <ul class="thumbnails" data-bind="foreach:mokaImages">
+                            <li class="span2" data-bind="click:$parent.checkImage">
+                                <a class="thumbnail lightbox_trigger">
+                                    <img alt="" data-bind="attr:{src:$data}">
+                                </a>
+                                <div class="actions">
+                                    <a title="选择魔卡照片" href=""><i class="icon-ok icon-white"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
     <script type="text/javascript">
         $('.shop_img').css({'cursor':'pointer'}).click(function(){
             var src = $(this).attr('src'),width=$(this).width,height=$(this).height;
@@ -118,5 +147,69 @@
                 }
             });
         }
+
+        function addImage(){
+            layer.open({
+                type: 1,
+                zIndex:20,
+                shade: true,
+                title: "编辑魔卡图片", //不显示标题
+                content: $('#gallery'), //捕获的元素
+                area:['700px','400px'],
+                btn:['确定','取消'],
+                yes:function(index){
+                    $.ajax({
+                        url:'/apply/update/image',
+                        type:'post',
+                        dataType:'json',
+                        data:{applyId:vm.selectApplyId(),image:vm.selectImage()},
+                        success:function(data){
+                            if(data['status']=="success"){
+                                layer.msg(data['message']);
+                                layer.close(index);
+                                window.location.reload();
+                            }else{
+                                layer.msg(data.message);
+                            }
+                        },
+                        error:function (error) {
+                            layer.msg('网络异常');
+                        }
+                    });
+                },
+                cancel: function(index){
+                    layer.close(index);
+                }
+            });
+        }
+
+        var viewModal=function(){
+            var self = this;
+            self.mokaImages=ko.observableArray([]);
+            self.getMokaImages=function($baby_id,$apply_id,$data){
+                self.selectApplyId($apply_id);
+                self.selectBabyId($baby_id);
+                $.ajax({
+                    url:'/baby/mokaimages/'+$baby_id,
+                    type:'get',
+                    dataType:'json',
+                    success:function($data){
+                        self.mokaImages($data);
+                        addImage();
+                    }
+                });
+            };
+            self.selectApplyId=ko.observable();
+            self.selectBabyId=ko.observable();
+            self.checkImage=function($data,$event){
+                //$($event).select('a')
+                console.log($event);
+                self.selectImage($data);
+            };
+            self.selectImage=ko.observable();
+        }
+
+        var vm=new viewModal();
+        ko.applyBindings(vm);
     </script>
     @endsection
