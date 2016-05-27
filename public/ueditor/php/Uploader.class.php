@@ -331,8 +331,7 @@ class Uploader
         if (substr($fullname, 0, 1) != '/') {
             $fullname = '/' . $fullname;
         }
-
-        dd($rootPath.$fullname);
+        
         return $rootPath . $fullname;
     }
 
