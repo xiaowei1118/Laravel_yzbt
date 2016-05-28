@@ -26,17 +26,18 @@
                     </div>
                 </div>
 
-                {{--<div class="row-fluid">--}}
-                    {{--<div class="span10">--}}
-                        {{--<div class="widget-box">--}}
-                            {{--<div class="widget-title"> <span class="icon"><a class="btn btn-default btn-mini">添加问题</a></span>--}}
-                                {{--<h5>问题和答案</h5>--}}
-                            {{--</div>--}}
-                            {{--<div class="widget-content nopadding updates">--}}
+                <div class="row-fluid">
+                    <div class="span10">
+                        <div class="widget-box">
+                            <div class="widget-title"> <span class="icon"><a class="btn btn-default btn-mini">添加问题</a></span>
+                                <h5>问题和答案</h5>
+                            </div>
+                            <div class="widget-content nopadding updates">
 
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <ul>
@@ -46,8 +47,8 @@
                         </ul>
                     </div>
                 @endif
-            </div>
-
+        </div>
+    </div>
     </div>
     <script type="text/javascript">
         $('.shop_img').css({'cursor':'pointer'}).click(function(){

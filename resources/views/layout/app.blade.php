@@ -80,12 +80,7 @@
   </ul>
 </div>
 
-<?php
-//  require_once 'config/db.php';
-//  if(! isset($_COOKIE['username'])){
-//    alert_href('您尚未登录！','login.php');
-//  };
-//?>
+
 @yield('content')
 
 <div class="row-fluid">
