@@ -51,6 +51,8 @@ Route::group(['middleware'=>'auth'], function () {
     Route::post('/apply/update/image','SignUpController@updateApplyImage');
     Route::get('/question/topicQuestion/{topicId}','QuestionController@topicQuesion');
     Route::post('/question/updateQuestion','QuestionController@updateQuestion');
+    Route::post('/question/createQuestion','QuestionController@createQuestion');
+    
     Route::resource('/quesion','QuestionControlller');
     Route::resource('/message/wechat','MessageController@wehcatMessage');
 

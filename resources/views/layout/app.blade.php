@@ -57,16 +57,16 @@
   <ul>
     <li><a href="{{url('/index')}}"><i class="icon icon-home"></i><span>首 页</span></a></li>
     <li><a href="{{url('/notice')}}"><i class="icon icon-signal"></i><span>通 告 管 理</span></a></li>
-    <li><a href="{{url('/smallNoticeList')}}"><i class="icon icon-signal"></i><span>报 名 管 理</span></a>
+    <li><a href="{{url('/smallNoticeList')}}"><i class="icon icon-fire"></i><span>报 名 管 理</span></a>
     </li>
     {{--<li><a href="#"><i class="icon icon-inbox"></i><span>商 家 管 理</span></a></li>--}}
     {{--<li><a href="#"><i class="icon icon-th"></i><span>二 维 码 管 理</span></a></li>--}}
     {{--<li><a href="#"><i class="icon icon-fullscreen"></i><span>统 计 分 析</span></a></li>--}}
     {{--<li><a href="#"><i class="icon icon-th-list"></i><span>运 营 管 理</span></a></li>--}}
-    <li><a href="#"><i class="icon icon-tint"></i><span>资讯管理</span></a>
-        <ul>
-            <li><a href="{{url('/topic')}}">资 讯 管 理</a></li>
-        </ul>
+    <li><a href="{{url('/topic')}}"><i class="icon icon-book"></i><span>资讯管理</span></a>
+        {{--<ul>--}}
+            {{--<li><a href="{{url('/topic')}}">资 讯 管 理</a></li>--}}
+        {{--</ul>--}}
     </li>
     {{--<li><a href="#"><i class="icon icon-tint"></i><span>投票管理</span></a>--}}
     </li>

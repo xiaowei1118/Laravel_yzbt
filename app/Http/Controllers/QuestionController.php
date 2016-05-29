@@ -106,4 +106,8 @@ class QuestionController extends Controller
     public function updateQuestion(){
         dd(Input::all());
     }
+
+    public function createQuestion(){
+        dd(Input::all());
+    }
 }
