@@ -54,5 +54,5 @@ Route::group(['middleware'=>'auth'], function () {
     Route::resource('/quesion','QuestionControlller');
     Route::resource('/message/wechat','MessageController@wehcatMessage');
 
-    Route::get('/export/excel/{noticeId}','SignupController@exportExcel');
+    Route::get('/export/excel/{noticeId}','SignUpController@exportExcel');
 });

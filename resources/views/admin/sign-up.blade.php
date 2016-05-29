@@ -98,7 +98,7 @@
                         <form action="message/wechat" class="form-horizontal" method="post">
                             <input type="hidden" value="{{$noticeId}}" name="noticeId"/>
                             <div class="control-group">
-                                <label class="control-label">Basic info :</label>
+                                <label class="control-label">消息内容 :</label>
                                 <div class="controls">
                                     <textarea class="span10" name="message" placeholder="请输入消息内容" required></textarea>
                                 </div>
