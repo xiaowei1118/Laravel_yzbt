@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
+use Maatwebsite\Excel\Facades\Excel;
 
 class SignUpController extends Controller
 {
@@ -37,74 +38,9 @@ class SignUpController extends Controller
                 $item->vote_count=ApplyVote::where("apply_id",$item->apply_id)->count();
             }
         }
-        return view('admin.sign-up')->with('res',$list);
+        return view('admin.sign-up')->with('res',$list)->with('noticeId',$notice_id);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 
     public function smallNoticeList(){
         $notices=Notice::select(['id','title','image_url'])->orderBy('create_time','desc')->where('is_apply',1)->get();
@@ -149,5 +85,47 @@ class SignUpController extends Controller
         }
 
         return $message;
+    }
+
+    public function exportExcel(Request $request,$noticeId){
+        $user=$request->user();
+        $data=$list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
+            ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
+            ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
+
+        if($noticeId==null){
+            $list=$list->get();
+        }else{
+            $list=$list->where('pn_id',$noticeId)->get();
+        }
+
+        foreach ($list as $item){
+            if($item->is_apply){
+                $item->vote_count=ApplyVote::where("apply_id",$item->apply_id)->count();
+            }
+        }
+
+        Excel::create('通告表', function($excel) use($user,$list){
+
+            // Set the title
+            $excel->setTitle('通告报名表');
+
+            // Chain the setters
+            $excel->setCreator($user->name)
+                ->setCompany('yzbt');
+
+            $excel->setDescription('通告报名名单');
+
+            $excel->sheet('名单',function($sheet) use($list){
+                $sheet->setOrientation('landscape');
+
+                $sheet->fromModel($list,null,'A1',true,true);
+//                $sheet->prependRow(1, array(
+//                    'id', 'openid','头像','昵称','姓名','性别(0-女，1-男，-1不确定)','生日','身高','体重','居住城市','特长','摩卡图片',
+//                ));
+            });
+        })->download('xls');
+
+        return true;
     }
 }

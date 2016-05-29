@@ -9,6 +9,7 @@ use App\Topic;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 
 class QuestionController extends Controller
 {
@@ -100,5 +101,9 @@ class QuestionController extends Controller
         }
 
         return view('admin.question-list')->with('questions',$questions)->with('topic',$topic);
+    }
+
+    public function updateQuestion(){
+        dd(Input::all());
     }
 }

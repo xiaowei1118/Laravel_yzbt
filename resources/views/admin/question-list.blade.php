@@ -15,7 +15,7 @@
                             @foreach($questions as $i=>$question)
                                 <div class="new-update">
                                     <div class="">
-                                        <strong>问题{{$i+1}}:{{$question->question}}</strong><br/>
+                                        <strong>问题{{$i+1}}:{{$question->question}}</strong><a href="#" class="btn btn-info btn-mini" data-bind="click:selectQuestionItem.bind($data,'{{$question->id}}')">编辑问题和答案</a><br/>
                                         @foreach($question['items'] as $key=>$item)
                                            <span style="float:left">{{chr($key+65)}}:{{$item->content}}</span><span style="float:right">已经有{{$item->count or 0}}人投票</span><br/>
                                         @endforeach
@@ -26,14 +26,38 @@
                     </div>
                 </div>
 
-                <div class="row-fluid">
-                    <div class="span10">
-                        <div class="widget-box">
-                            <div class="widget-title"> <span class="icon"><a class="btn btn-default btn-mini">添加问题</a></span>
-                                <h5>问题和答案</h5>
-                            </div>
-                            <div class="widget-content nopadding updates">
-
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="widget-box">
+                                <div class="widget-title">
+								<span class="icon">
+									<i class="icon-align-justify"></i>
+								</span>
+                                    <h5>问题详情</h5>
+                                </div>
+                                <div class="widget-content nopadding">
+                                    <form method="post" class="form-horizontal" data-bind="with:selectQuestion">
+                                        <input type="hidden" data-bind="text:id"/>
+                                        <div class="control-group">
+                                            <label class="control-label">问题 :</label>
+                                            <div class="controls"><input type="text" class="span20" placeholder="编辑问题" data-bind="value:questionTitle"/></div>
+                                        </div>
+                                        <!--ko foreach:answerList-->
+                                        <div class="control-group">
+                                            <label class="control-label">答案 <span data-bind="text:$index()+1"></span>:</label>
+                                            <div class="controls">
+                                                <input type="text" class="span20" placeholder="编辑答案" data-bind="value:$data.content"/>
+                                                <input type="hidden" class="span20" data-bind="value:$data.id"/>
+                                                <button class="btn btn-warning btn-mini" data-bind="click:$parent.removeItem">删除</button>
+                                            </div>
+                                        </div>
+                                        <!--/ko-->
+                                        <div class="form-actions">
+                                            <button type="button" class="btn btn-success" onclick="submitData()">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,63 +87,68 @@
             });
         });
 
-        function updateBool(url){
-            $.ajax({
-                'url':url,
-                'type':'get',
-                'dataType':'json',
-                success:function (data) {
-                    if(data['status']="success"){
-                        layer.msg(data['message']);
-                        window.location.reload();
-                    }else{
-                        layer.msg(data['message']);
-                    }
-                }
-            });
-        }
+        var submitData=function(){
+            if(vm.selectQuestion=={}){
 
-        function addImage(){
-            layer.open({
-                type: 1,
-                zIndex:20,
-                shade: true,
-                title: "编辑魔卡图片", //不显示标题
-                content: $('#gallery'), //捕获的元素
-                area:['700px','400px'],
-                btn:['确定','取消'],
-                yes:function(index){
-                    $.ajax({
-                        url:'/apply/update/image',
-                        type:'post',
-                        dataType:'json',
-                        data:{applyId:vm.selectApplyId(),image:vm.selectImage()},
-                        success:function(data){
-                            if(data['status']=="success"){
-                                layer.msg(data['message']);
-                                layer.close(index);
-                                window.location.reload();
-                            }else{
-                                layer.msg(data.message);
-                            }
-                        },
-                        error:function (error) {
-                            layer.msg('网络异常');
-                        }
-                    });
-                },
-                cancel: function(index){
-                    layer.close(index);
+            }else{
+
+            }
+            $.ajax({
+                url:'/question/updateQuestion',
+                type:'post',
+                data:{data:vm.selectQuestion()},
+                success:function(){
+
                 }
             });
-        }
+        };
 
         var viewModal=function(){
             var self = this;
+            self.selectQuestion=ko.observable({});
+            self.questionList=ko.observableArray([]);
+            self.createQuestion=ko.observable(false);
 
+            self.selectQuestionItem=function($id){
+                for(var key in self.questionList()){
+                    if(self.questionList()[key].id()==$id) {
+                          var question=new Question();
+                          question.id($id);
+                          question.questionTitle(self.questionList()[key].questionTitle());
+                          var list=self.questionList();
+                            _.each(list[key].answerList(),function($item){
+                                var $answer={};
+                                 _.extend($answer,$item);
+                                question.answerList.push($answer);
+                            });
+                        self.selectQuestion(question);
+                    }
+                }
+            }
+        }
+
+        var Question=function(){
+            var self=this;
+            self.answerList=ko.observableArray([]);
+            self.questionTitle=ko.observable();
+            self.id=ko.observable(0);
+            self.removeItem=function($data){
+                self.answerList.remove($data);
+            }
         }
 
         var vm=new viewModal();
+        var initQuestionList=function(){
+            var $data=$.parseJSON('{!! $questions  !!}');
+            $.each($data,function($key,$item){
+                var question=new Question();
+                question.questionTitle($item.question);
+                question.answerList($item.items);
+                question.id($item.id);
+                vm.questionList.push(question);
+            });
+        }
+        initQuestionList();
         ko.applyBindings(vm);
     </script>
 @endsection

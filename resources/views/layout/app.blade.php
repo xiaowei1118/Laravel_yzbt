@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="/css/my.css" />
 <script src="/js/jquery.min.js"></script>
 <script src="/js/layer/layer.js"></script>
+<script src="/js/underscore-min.js"></script>
 <script src="/js/knockout-3.4.0.js"></script>
 </head>
 <style>

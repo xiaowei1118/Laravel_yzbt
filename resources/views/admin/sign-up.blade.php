@@ -9,7 +9,7 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title">
-                        <span class="icon"><i class="icon-th"></i></span>
+                       <a href="/export/excel/{{$noticeId}}"><span class="icon"><i class="icon-circle-arrow-down"></i>导出</span></a>
                     </div>
                     <div class="widget-content nopadding">
                         <table class="table table-bordered data-table">
@@ -83,18 +83,42 @@
                             @endforeach
                             </tbody>
                         </table>
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
                     </div>
                 </div>
             </div>
+            <div class="">
+                <div class="widget-box">
+                    <div class="widget-title">
+								<span class="icon">
+									<i class="icon-align-justify"></i>
+								</span>
+                        <h5>向报名者发送微信消息</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form action="message/wechat" class="form-horizontal" method="post">
+                            <input type="hidden" value="{{$noticeId}}" name="noticeId"/>
+                            <div class="control-group">
+                                <label class="control-label">Basic info :</label>
+                                <div class="controls">
+                                    <textarea class="span10" name="message" placeholder="请输入消息内容" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-success">发送</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
         </div>
     </div>
 
@@ -201,10 +225,10 @@
             };
             self.selectApplyId=ko.observable();
             self.selectBabyId=ko.observable();
-            self.checkImage=function($data,$event){
-                //$($event).select('a')
-                console.log($event);
+            self.checkImage=function($data,e){
                 self.selectImage($data);
+                $(e.currentTarget).parent().find('.actions').css({'opacity':0});
+                $(e.currentTarget).find('.actions').css({'opacity':1});
             };
             self.selectImage=ko.observable();
         }
