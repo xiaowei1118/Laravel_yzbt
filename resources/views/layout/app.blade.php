@@ -67,7 +67,7 @@
             <li><a href="{{url('/topic')}}">资 讯 管 理</a></li>
         </ul>
     </li>
-    <li><a href="#"><i class="icon icon-tint"></i><span>投票管理</span></a>
+    {{--<li><a href="#"><i class="icon icon-tint"></i><span>投票管理</span></a>--}}
     </li>
     <li><a href="#"><i class="icon icon-pencil"></i><span>系 统 管 理</span></a>
       <ul>
