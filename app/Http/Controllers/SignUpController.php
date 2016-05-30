@@ -23,7 +23,7 @@ class SignUpController extends Controller
     {
         $notice_id=Input::get('noticeId');
 
-        $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
+        $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.feedback,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
             ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
             ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
@@ -127,5 +127,20 @@ class SignUpController extends Controller
         })->download('xls');
 
         return true;
+    }
+
+    public function feedbackUpdate(){
+        $applyId=Input::get('applyId');
+        $feedback=Input::get('feedback');
+
+        $result=SignUp::where('id',$applyId)->update(array('feedback'=>$feedback));
+        if($result){
+            $message['status']='success';
+            $message['message']="修改反馈成功";
+        }else{
+            $message['status']='fail';
+            $message['message']="修改反馈失败";
+        }
+        return $message;
     }
 }

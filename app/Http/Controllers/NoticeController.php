@@ -6,6 +6,7 @@ use App\Banner;
 use App\City;
 use App\Notice;
 use App\Services\BannerService;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -38,6 +39,7 @@ class NoticeController extends Controller
         $notice->fill($data);
         $notice->status=1;
         $notice->publisher_username=$user->name;
+        $notice->create_time=Carbon::now()->toDateString();
 
         if($notice['is_hot']==1){
             $hotCount=Notice::where('is_hot',1)->count();

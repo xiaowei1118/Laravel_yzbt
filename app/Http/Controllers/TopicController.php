@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Banner;
 use App\Services\BannerService;
 use App\Topic;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -52,6 +53,7 @@ class TopicController extends Controller
         $data=Input::all();
         $topic->fill($data);
         $topic->publisher_username=$user->name;
+        $topic->create_time=Carbon::now()->toDateString();
 
         if($topic['is_hot']==1){
             $hotCount=Topic::where('is_hot',1)->count();
