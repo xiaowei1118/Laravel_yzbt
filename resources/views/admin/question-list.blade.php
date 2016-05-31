@@ -15,7 +15,9 @@
                             @foreach($questions as $i=>$question)
                                 <div class="new-update">
                                     <div class="">
-                                        <strong>问题{{$i+1}}:{{$question->question}}</strong><a href="#" class="btn btn-info btn-mini" style="margin-left:100px" data-bind="click:selectQuestionItem.bind($data,'{{$question->id}}')">编辑问题</a><br/>
+                                        <strong>问题{{$i+1}}:{{$question->question}}</strong><a href="#" class="btn btn-info btn-mini" style="margin-left:100px" data-bind="click:selectQuestionItem.bind($data,'{{$question->id}}')">编辑问题</a>
+                                        <a href="#" class="btn btn-info btn-mini" style="margin-left:100px" data-bind="click:deleteQuestion.bind($data,'{{$question->id}}')">删除问题</a>
+                                        <br/>
                                         @foreach($question['items'] as $key=>$item)
                                            <span style="float:left">{{chr($key+65)}}:{{$item->content}}</span><span style="float:right">已经有{{$item->count or 0}}人投票</span><br/>
                                         @endforeach
@@ -142,20 +144,39 @@
             $.ajax({
                 url:'/question/updateQuestion',
                 type:'post',
-                data:{id:vm.selectQuestion().id(),question:vm.selectQuestion().questionTitle(),answers:JSON.stringify($answers)},
-                success:function(){
-
+                dataType:'json',
+                data:{topicId:vm.topicId,id:vm.selectQuestion().id(),question:vm.selectQuestion().questionTitle(),answers:JSON.stringify($answers)},
+                success:function(data){
+                    if(data['status']=="success"){
+                        layer.msg(data['message']);
+                        location.reload();
+                    }else{
+                        layer.msg(data['message']);
+                    }
                 }
             });
         };
 
         var submitCreateData=function(){
+            var questionTitle=vm.newQuestion().questionTitle();
+            var $answers=[];
+            _.each(vm.newQuestion().answerList(),function($item){
+                var answer={'id':$item.id(),"content":$item.content(),'count':$item.count()};
+                $answers.push(answer);
+            });
+
             $.ajax({
                 url:'/question/createQuestion',
                 type:'post',
-                data:{data:vm.selectQuestion()},
-                success:function(){
-
+                dataType:'json',
+                data:{question:questionTitle,answers:JSON.stringify($answers),topicId:vm.topicId},
+                success:function(data){
+                    if(data['status']=="success"){
+                        layer.msg('添加成功')
+                        location.reload();
+                    }else{
+                        layer.msg('添加失败');
+                    }
                 }
             });
         }
@@ -167,6 +188,7 @@
             self.createQuestion=ko.observable(false);
             self.isEdit=ko.observable(0);
             self.newQuestion=ko.observable({});
+            self.topicId="{{$topic->id}}";
 
             self.addQuestion=function(){
                 var question=new Question();
@@ -192,6 +214,27 @@
                     }
                 }
                 self.isEdit(1);
+            }
+            self.deleteQuestion=function($id){
+                $index=layer.confirm('是否确定删除?', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    $.ajax({
+                        url:'/quesion/delete/'+$id,
+                        type:'get',
+                        dataType:'json',
+                        success:function (data) {
+                            if(data['status']='success'){
+                                layer.msg(data['message']);
+                                window.location.reload();
+                            }else{
+                                layer.msg(data['message']);
+                            }
+                        }
+                    });
+                }, function(){
+                    layer.close($index);
+                });
             }
         }
 

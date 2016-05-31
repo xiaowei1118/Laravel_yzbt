@@ -6,87 +6,28 @@ use App\AnswerItem;
 use App\AnswerVote;
 use App\Question;
 use App\Topic;
+use Exception;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 
 class QuestionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function delete($id)
     {
-        //
-    }
+        try{
+            Question::where('id',$id)->delete();
+            AnswerItem::where('question_id',$id)->delete();
+            $message['status']="success";
+            $message['message']="删除成功";
+        }catch (Exception $e){
+            $message['status']="fail";
+            $message['message']='删除失败';
+        }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        return $message;
     }
 
     public function topicQuesion($topicId){
@@ -104,10 +45,73 @@ class QuestionController extends Controller
     }
 
     public function updateQuestion(){
-        dd(Input::all());
+        $question=Input::get('question');
+        $answers=json_decode(Input::get('answers'));
+        $id=Input::get('id');
+
+        DB::beginTransaction();
+
+        try{
+            Question::where('id',$id)->update(['question'=>$question]);
+
+            $answer_list_id=[];
+            $all_list_id=AnswerItem::select(['id'])->where('question_id',$id)->get();
+            foreach ($answers as $item){
+                if($item->id!=0){
+                    array_push($answer_list_id,$item->id);
+                }
+            }
+
+            //删除
+            foreach ($all_list_id as $t){
+                if(array_search($t->id,$answer_list_id)===false){
+                    AnswerItem::where('id',$t->id)->delete();
+                }
+            }
+
+            //新增
+            foreach ($answers as $s){
+                if($s->id==0){
+                    AnswerItem::create(['content'=>$s->content,'question_id'=>$id]);
+                }else{
+                    AnswerItem::where('id',$s->id)->update(['content'=>$s->content]);
+                }
+            }
+
+            $message['status']='success';
+            $message['message']='修改成功';
+            DB::commit();
+        }catch (Exception $e){
+            DB::rollback();
+            dd($e);
+            $message['status']='fail';
+            $message['message']='修改失败';
+        }
+
+        return $message;
     }
 
     public function createQuestion(){
-        dd(Input::all());
+        $question=Input::get('question');
+        $answers=json_decode(Input::get('answers'));
+        $topicId=Input::get('topicId');
+
+        DB::beginTransaction();
+
+        try{
+            $questionObj=Question::create(['question'=>$question,'st_id'=>$topicId]);
+            foreach ($answers as $item){
+                AnswerItem::create(['content'=>$item->content,'question_id'=>$questionObj->id]);
+            }
+            $message['status']='success';
+            $message['message']='添加成功';
+            DB::commit();
+        }catch (Exception $e){
+            DB::rollback();
+            $message['status']='fail';
+            $message['message']='添加失败';
+        }
+
+        return $message;
     }
 }

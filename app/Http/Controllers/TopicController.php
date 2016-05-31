@@ -137,4 +137,22 @@ class TopicController extends Controller
             return back()->withErrors('更改状态失败');
         }
     }
+
+    public function voteDetail(){
+        $topicId=Input::get('topicId');
+        $item=Topic::where('id',$topicId)->first();
+        return view('admin.vote_detail')->with('item',$item)->with('type','topic');
+    }
+
+    public function updateVoteDetail(){
+        $topicId=Input::get('topicId');
+        $vote_detail_content=Input::get('content');
+
+        $result=Notice::where('id',$topicId)->update(['vote_detail_count'=>$vote_detail_content]);
+        if($result){
+            return $this->index();
+        }else{
+            return back()->withErrors('编辑失败');
+        }
+    }
 }

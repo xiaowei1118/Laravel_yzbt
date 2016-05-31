@@ -92,6 +92,9 @@
                                         <a class="btn btn-danger btn-mini" href='{{url("/question/topicQuestion/$row->id")}}'>
                                             查看问题
                                         </a>
+                                        <a class="btn btn-info btn-mini" href='{{url("/topic/voteDetail")."?topicId=$row->id"}}'>
+                                            投票规则详情
+                                        </a>
                                     @endif
                                 </td>
                                 </tr>

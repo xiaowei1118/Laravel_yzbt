@@ -6,6 +6,7 @@ use App\Banner;
 use App\City;
 use App\Notice;
 use App\Services\BannerService;
+use App\Topic;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -116,6 +117,30 @@ class NoticeController extends Controller
             return $this->index();
         }else{
             return back()->withErrors('更改状态失败');
+        }
+    }
+
+    public function voteDetail(){
+        $noticeId=Input::get('noticeId');
+        $item=Notice::where('id',$noticeId)->first();
+        return view('admin.vote_detail')->with('item',$item)->with('type','notice');
+    }
+
+    public function updateVoteDetail(){
+        $id=Input::get('id');
+        $vote_detail_content=Input::get('content');
+        $type=Input::get('type');
+
+        if($type=="notice"){
+            $result=Notice::where('id',$id)->update(['vote_detail_content'=>$vote_detail_content]);
+        }else{
+            $result=Topic::where('id',$id)->update(['vote_detail_content'=>$vote_detail_content]);
+        }
+
+        if($result){
+            return back()->withErrors('编辑成功');
+        }else{
+            return back()->withErrors('编辑失败');
         }
     }
 }

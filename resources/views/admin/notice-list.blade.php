@@ -99,7 +99,11 @@
                                     <a class="btn btn-success btn-mini" href='{{url("/comment")."?parentId=0&noticeId=$row->id"}}'>
                                        查看评论
                                     </a>
-
+                                    @if($row->is_apply==1)
+                                    <a class="btn btn-info btn-mini" href='{{url("/notice/voteDetail")."?&noticeId=$row->id"}}'>
+                                        投票详情
+                                    </a>
+                                    @endif
                                 </td>
                                 </tr>
                             <?php }?>

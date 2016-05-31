@@ -24,7 +24,8 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('/home', 'HomeController@index');
     Route::resource('/notice','NoticeController',['only' => ['index', 'edit','store','update','create']]);
     Route::get('/notice/status/{id}/{field}/{value}','NoticeController@updateBool');
-
+    Route::get('/notice/voteDetail','NoticeController@voteDetail');
+    Route::post('/notice/voteDetail/update','NoticeController@updateVoteDetail');
 
     Route::group(['prefix'=>'comment'],function(){
         Route::resource('/','CommentController',['only' => ['index', 'edit','store','update','create']]);
@@ -39,6 +40,7 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('smallNoticeList','SignUpController@smallNoticeList');
     Route::resource('topic','TopicController',['only' => ['index', 'edit','store','update','create']]);
     Route::get('/topic/status/{id}/{field}/{value}','TopicController@updateBool');
+    Route::get('/topic/voteDetail','TopicController@voteDetail');
 
     Route::resource('/city','CityController',['only'=>['index']]);
     Route::get('/city/status/{city_id}/{value}','CityController@updateStatus');
@@ -53,7 +55,7 @@ Route::group(['middleware'=>'auth'], function () {
     Route::post('/question/updateQuestion','QuestionController@updateQuestion');
     Route::post('/question/createQuestion','QuestionController@createQuestion');
     
-    Route::resource('/quesion','QuestionControlller');
+    Route::get('/quesion/delete/{id}','QuestionController@delete');
     Route::resource('/message/wechat','MessageController@wehcatMessage');
 
     Route::get('/export/excel/{noticeId}','SignUpController@exportExcel');
