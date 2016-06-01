@@ -25,6 +25,7 @@ class SignUpController extends Controller
 
         $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.feedback,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
             ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
+            ->where('tb_baby.status',1)
             ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
         if($notice_id==null){
@@ -34,9 +35,7 @@ class SignUpController extends Controller
         }
 
         foreach ($list as $item){
-            if($item->is_apply){
                 $item->vote_count=ApplyVote::where("apply_id",$item->apply_id)->count();
-            }
         }
         return view('admin.sign-up')->with('res',$list)->with('noticeId',$notice_id);
     }
@@ -89,8 +88,10 @@ class SignUpController extends Controller
 
     public function exportExcel(Request $request,$noticeId){
         $user=$request->user();
-        $data=$list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
+        $list=SignUp::selectRaw('tb_baby.id,tb_baby.nickname,tb_baby.name,height,weight,tb_baby.living_city,talent,tb_baby.birthdate,tb_baby.sex,tb_pn_apply.image_url as img_url,tb_wx_user.name as parent_name,tb_wx_user.nickname as parent_nick_name,tb_wx_user.telephone,tb_pn_apply.id as count')
             ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
+            ->where('is_vote',1)
+            ->where('tb_baby.status',1)
             ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
         if($noticeId==null){
@@ -100,12 +101,19 @@ class SignUpController extends Controller
         }
 
         foreach ($list as $item){
-            if($item->is_apply){
-                $item->vote_count=ApplyVote::where("apply_id",$item->apply_id)->count();
+            if($item->sex==1){
+                $item->sex="男";
+            }else if($item->sex==0){
+                $item->sex="女";
+            }else{
+                $item->sex="未知";
             }
         }
+        foreach ($list as $item){
+                $item->count=ApplyVote::where("apply_id",$item->count)->count();
+        }
 
-        Excel::create('通告表', function($excel) use($user,$list){
+        Excel::create('通告报名表', function($excel) use($user,$list){
 
             // Set the title
             $excel->setTitle('通告报名表');
@@ -119,10 +127,10 @@ class SignUpController extends Controller
             $excel->sheet('名单',function($sheet) use($list){
                 $sheet->setOrientation('landscape');
 
-                $sheet->fromModel($list,null,'A1',true,true);
-//                $sheet->prependRow(1, array(
-//                    'id', 'openid','头像','昵称','姓名','性别(0-女，1-男，-1不确定)','生日','身高','体重','居住城市','特长','摩卡图片',
-//                ));
+                $sheet->fromModel($list,null,'A1',true,false);
+                $sheet->prependRow(1, array(
+                    'id','孩子昵称','孩子名字','身高','体重','居住城市','特长','生日','性别','参赛图片','家长姓名','微信昵称','手机号','投票数'
+                ));
             });
         })->download('xls');
 

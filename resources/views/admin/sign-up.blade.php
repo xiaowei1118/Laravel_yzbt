@@ -148,6 +148,9 @@
                                 </div>
                             </li>
                         </ul>
+                        <!--ko if:mokaImages().length==0-->
+                            对不起，用户暂时没有提供摩卡图片
+                        <!--/ko-->
                     </div>
                 </div>
             </div>
