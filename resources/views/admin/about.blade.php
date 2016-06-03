@@ -20,7 +20,7 @@
                             </div>
                         </div>
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-success">Save</button>
+                            <button type="submit" class="btn btn-success">保存</button>
                         </div>
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">

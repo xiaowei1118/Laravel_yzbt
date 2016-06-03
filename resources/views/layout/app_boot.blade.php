@@ -3,8 +3,7 @@
 <head>
 <title>admin</title><meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{{--<link rel="stylesheet" href="/css/bootstrap.min.css" />--}}
-  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
 
 <link rel="stylesheet" href="/css/datepicker.css" />
@@ -30,7 +29,7 @@
 
 <!--Header-part-->
 <div id="header">
-  <h1>与众不童<a href="#">与众不童</a></h1>
+  <h1><a href="#">与众不童</a></h1>
 </div>
 <!--close-Header-part--> 
 

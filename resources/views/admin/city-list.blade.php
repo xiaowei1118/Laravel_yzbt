@@ -2,7 +2,26 @@
 @section('table_list')
 <style>
     .select2-container .select2-choice{
-        width:140px;
+        width: 150px;
+        margin-left: -12px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 0px solid #ccc;
+         border-radius: 0px;
+        /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+        box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+        /* -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; */
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        /* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
     }
 </style>
 <div id="content">
@@ -18,7 +37,7 @@
                         <a onclick="addCity();" class="btn btn-primary btn-default">添加城市</a>
                     </div>
                     <div class="widget-content nopadding">
-                        <table class="table table-bordered data-table">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th>城市id</th>
@@ -61,18 +80,19 @@
                     </div>
                 </div>
             </div>
+            {!! $city->render() !!}
         </div>
     </div>
     <div id="city_form" style="display: none; width:460px;">
         <div class="row-fluid">
             <div class="span12">
-                <div class="widget-box" style="margin-left:10px">
-                    <div class="widget-content nopadding">
+                <div class="" style="margin-left:10px">
+                    <div class="nopadding">
                         <form action="#" method="get" class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label">省</label>
-                                <div class="controls">
-                                    <select name="province" style="width:150px;" onchange="whenChange();">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">省</label>
+                                <div class="col-sm-4">
+                                    <select name="province" class="form-control" style="width:150px;" onchange="whenChange();">
                                         @foreach($province as $item)
                                             <option>{{$item->province}}</option>
                                         @endforeach
@@ -80,10 +100,10 @@
                                 </div>
                             </div>
 
-                            <div class="control-group">
-                                <label class="control-label">市</label>
-                                <div class="controls">
-                                    <select name="city" style="width:150px" data-bind="options:cityList">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">市</label>
+                                <div class="col-sm-4">
+                                    <select name="city" class="form-control" style="width:150px" data-bind="options:cityList">
                                     </select>
                                 </div>
                             </div>
@@ -142,7 +162,7 @@
     whenChange();
     function whenChange() {
         var province=$('select[name=province]').val();
-        $('.select2-choice span').eq(2).text("");
+        $('.select2-choice span').eq(1).text("");
         vm.cityList([]);
         $.ajax({
             url:'/city/list/'+province,
@@ -151,7 +171,7 @@
             success:function(data){
                 if(data['status']=="success"){
                     vm.cityList(data['city']);
-                    $('.select2-choice span').eq(2).text($('select[name=city]').val());
+                    $('.select2-choice span').eq(1).text($('select[name=city]').val());
                 }else{
                     layer.msg('获取省份失败');
                 }

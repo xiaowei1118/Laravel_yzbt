@@ -17,8 +17,8 @@ class CityController extends Controller
      */
     public function index()
     {
-        $cities=City::where('status',1)->get();
-        $provinces=City::selectRaw('distinct(province)')->get();
+        $cities=City::where('status',1)->paginate(10);
+        $provinces=City::selectRaw('distinct(province)')->get(10);
         return view('admin.city-list')->with('city',$cities)->withProvince($provinces);
     }
 

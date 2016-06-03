@@ -13,9 +13,10 @@
                         <a href="{{url('/notice/create')}}" class="btn btn-primary btn-default">添加通告</a>
                     </div>
                     <div class="widget-content nopadding">
-                        <table class="table table-bordered data-table">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
+                                <th style="display: none"></th>
                                 <th>标题</th>
                                 <th>图片</th>
                                 <th>城市</th>
@@ -38,6 +39,7 @@
                             foreach ($res as $row) {
                                 ?>
                                 <tr class="gradeX">
+                                <td style="display: none">{{$row->create_time}}</td>
                                 <td><?php echo $row['title'] ?></td>
                                 <td><?php echo "<img class='shop_img' src='".$row['image_url']."' width='100' height='100' />" ?></td>
                                 <td><?php echo $row['city'] ?></td>
@@ -122,6 +124,7 @@
                 </div>
             </div>
         </div>
+        {!! $res->render() !!}
     </div>
 
     </div>

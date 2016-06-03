@@ -20,7 +20,7 @@ class TopicController extends Controller
      */
     public function index()
     {
-        $list=Topic::orderBy('create_time','desc')->get();
+        $list=Topic::orderBy('create_time','desc')->paginate(10);
         return view('admin.topic-list')->with('res',$list);
     }
 

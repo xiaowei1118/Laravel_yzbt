@@ -29,9 +29,9 @@ class SignUpController extends Controller
             ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
         if($notice_id==null){
-            $list=$list->get();
+            $list=$list->paginate(10);
         }else{
-            $list=$list->where('pn_id',$notice_id)->get();
+            $list=$list->where('pn_id',$notice_id)->paginate(10);
         }
 
         foreach ($list as $item){
@@ -42,7 +42,7 @@ class SignUpController extends Controller
 
 
     public function smallNoticeList(){
-        $notices=Notice::select(['id','title','image_url'])->orderBy('create_time','desc')->where('is_apply',1)->get();
+        $notices=Notice::select(['id','title','image_url'])->orderBy('create_time','desc')->where('is_apply',1)->paginate(10);
         return view('admin.small-notice-list')->with('res',$notices);
     }
 

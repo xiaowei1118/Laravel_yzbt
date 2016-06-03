@@ -13,7 +13,7 @@
                         <a href="{{url('/topic/create')}}" class="btn btn-primary btn-default">添加资讯</a>
                     </div>
                     <div class="widget-content nopadding">
-                        <table class="table table-bordered data-table">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th>标题</th>
@@ -113,6 +113,7 @@
                     </div>
                 </div>
             </div>
+            {!! $res->render() !!}
         </div>
     </div>
 

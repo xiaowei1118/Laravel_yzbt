@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Input;
 class NoticeController extends Controller
 {
     public function index(){
-        $notices=Notice::orderBy('create_time','desc')->get();
+        $notices=Notice::orderBy('create_time','desc')->paginate(10);
         return view('admin.notice-list')->with('res',$notices);
     }
 

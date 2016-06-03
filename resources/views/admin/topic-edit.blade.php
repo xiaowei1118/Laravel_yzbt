@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.app_boot')
 @section('content')
 <div id="content">
   <div id="content-header">

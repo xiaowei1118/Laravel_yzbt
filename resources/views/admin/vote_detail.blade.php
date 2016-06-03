@@ -29,7 +29,7 @@
 
                   <div class="form-actions">
                     <button type="submit" class="btn btn-success">添加</button>
-                    <input type="reset" class="btn">取消</input>
+                    <input type="reset" class="btn"/>
                   </div>
                 </form>
                   @if (count($errors) > 0)

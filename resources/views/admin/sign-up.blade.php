@@ -12,7 +12,7 @@
                        <a href="/export/excel/{{$noticeId}}"><span class="icon"><i class="icon-circle-arrow-down"></i>导出</span></a>
                     </div>
                     <div class="widget-content nopadding">
-                        <table class="table table-bordered data-table">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -95,6 +95,7 @@
                             </tbody>
                         </table>
                     </div>
+                    {!! $res->render() !!}
                 </div>
             </div>
             <div class="">
@@ -108,14 +109,16 @@
                     <div class="widget-content nopadding">
                         <form action="message/wechat" class="form-horizontal" method="post">
                             <input type="hidden" value="{{$noticeId}}" name="noticeId"/>
-                            <div class="control-group">
-                                <label class="control-label">消息内容 :</label>
-                                <div class="controls">
-                                    <textarea class="span10" name="message" placeholder="请输入消息内容" required></textarea>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">消息内容 :</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" name="message" placeholder="请输入消息内容" required></textarea>
                                 </div>
                             </div>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-success">发送</button>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-success">Sign in</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -136,15 +139,15 @@
     <div class="container" id="gallery" style="display:none;width: 600px;height:300px;">
         <div class="row">
             <div class="">
-                <div class="widget-box">
-                    <div class="widget-content">
-                        <ul class="thumbnails" data-bind="foreach:mokaImages">
+                <div class="">
+                    <div class="">
+                        <ul class="thumbnails" data-bind="foreach:mokaImages" style="list-style: none">
                             <li class="span2" data-bind="click:$parent.checkImage">
                                 <a class="thumbnail lightbox_trigger">
-                                    <img alt="" data-bind="attr:{src:$data}">
+                                    <img alt="" data-bind="attr:{src:$data}" style="height: 90px">
                                 </a>
                                 <div class="actions">
-                                    <a title="选择魔卡照片" href=""><i class="icon-ok icon-white"></i></a>
+                                    <a title="选择魔卡照片" href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
                                 </div>
                             </li>
                         </ul>
@@ -163,11 +166,11 @@
                 <div class="widget-box" style="margin-left:10px">
                     <div class="widget-content nopadding">
                         <form action="#" method="get" class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label">反馈</label>
-                                <div class="controls" data-bind="with:selectSignup">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">反馈</label>
+                                <div class="col-sm-8" data-bind="with:selectSignup">
                                    <input type="hidden" data-bind="value:id"/>
-                                   <textarea name="feedback" data-bind="value:feedback"></textarea>
+                                   <textarea name="feedback" class="form-control" data-bind="value:feedback"></textarea>
                                 </div>
                             </div>
                         </form>

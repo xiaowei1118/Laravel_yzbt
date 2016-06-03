@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.app_boot')
 @section('content')
 <div id="content">
   <div id="content-header">
@@ -115,7 +115,7 @@
 
                   <div class="form-actions">
                     <button name="add" type="submit" class="btn btn-success">添加</button>
-                    <input type="reset" class="btn">取消</input>
+                    <input type="reset" class="btn"/>
                   </div>
                 </form>
                   @if (count($errors) > 0)
