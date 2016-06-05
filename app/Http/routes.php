@@ -34,7 +34,8 @@ Route::group(['middleware'=>'auth'], function () {
         Route::get('/topicComments/{id}/delete','CommentController@deleteTopicComments');
     });
 
-    Route::resource('signup','SignUpController');
+    Route::get('/signup/index/{notice_id}','SignUpController@index');
+    //Route::resource('signup','SignUpController',['only'=>['']]);
     Route::get('/signup/status/{id}/{field}/{value}','SignUpController@updateBool');
 
     Route::get('smallNoticeList','SignUpController@smallNoticeList');

@@ -19,20 +19,20 @@ class SignUpController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($notice_id)
     {
-        $notice_id=Input::get('noticeId');
+        //$notice_id=Input::get('noticeId');
 
         $list=SignUp::selectRaw('tb_baby.*,tb_pn_apply.image_url as img_url,tb_pn_apply.is_vote,tb_pn_apply.feedback,tb_pn_apply.id as apply_id,tb_wx_user.name as parent_name,tb_wx_user.telephone')
             ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
             ->where('tb_baby.status',1)
             ->join('tb_wx_user','tb_baby.guardian_openid','=','tb_wx_user.openid');
 
-        if($notice_id==null){
-            $list=$list->paginate(10);
-        }else{
+        //if($notice_id==null){
+        //    $list=$list->paginate(10);
+        //}else{
             $list=$list->where('pn_id',$notice_id)->paginate(10);
-        }
+        //}
 
         foreach ($list as $item){
                 $item->vote_count=ApplyVote::where("apply_id",$item->apply_id)->count();

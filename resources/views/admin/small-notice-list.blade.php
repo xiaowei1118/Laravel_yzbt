@@ -29,7 +29,7 @@
                                 <td><?php echo $row['title'] ?></td>
                                 <td><?php echo "<img class='shop_img' src='".$row['image_url']."' width='100' height='100' />" ?></td>
                                 <td>
-                                    <a class="btn btn-primary btn-mini" href='{{url("/signup")."?noticeId=$row->id"}}'>查看报名</a>
+                                    <a class="btn btn-primary btn-mini" href='{{url("/signup/index/$row->id")}}'>查看报名</a>
                                     @if($row->is_vote)
                                         <a class="btn btn-info btn-mini" href='{{url("/vote")."?noticeId=$row->id"}}'>查看投票</a>
                                     @endif
