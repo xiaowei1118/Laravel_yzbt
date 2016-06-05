@@ -90,9 +90,9 @@
 </div>
 </body>
 <script>
-//    $(function () {
-//        $height=$(window).height();
-//        $('#content').css({'height':$height-$('#head').height()-$('#sidebar').height()-95});
-//    });
+    $(function () {
+        var $height=$(window).height();
+        $('#content').css({'min-height':$height-$('#head').height()-$('#sidebar').height()-105});
+    });
 </script>
 </html>
