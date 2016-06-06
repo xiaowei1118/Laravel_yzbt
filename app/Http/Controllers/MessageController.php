@@ -37,7 +37,7 @@ class MessageController extends Controller
         $noticeId=Input::get('noticeId');
         $accessToken=WechatService::getAccessToken();
         $message=Input::get('message');
-        $user=SignUp::select(['openid'])->where('pn_id',$noticeId)->where('is_vote',1)->get();
+        $user=SignUp::select(['openid'])->where('pn_id',$noticeId)->where('is_vote',1)->distinct()->get();
 
         if(count($user)==0){
             return back()->withInput()->withErrors("当前已通过的报名人数为0");
