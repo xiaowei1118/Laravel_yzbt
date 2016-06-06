@@ -39,7 +39,7 @@ class MessageController extends Controller
         $message=Input::get('message');
         $user=SignUp::select(['openid'])->where('pn_id',$noticeId)->where('is_vote',1)->get();
 
-        if($user==null){
+        if(count($user)==0){
             return back()->withInput()->withErrors("当前已通过的报名人数为0");
         }else{
             foreach ($user as $item){

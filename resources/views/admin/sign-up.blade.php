@@ -107,7 +107,7 @@
                         <h5>向报名者发送微信消息</h5>
                     </div>
                     <div class="widget-content nopadding">
-                        <form action="message/wechat" class="form-horizontal" method="post">
+                        <form action="{{url('message/wechat')}}" class="form-horizontal" method="post">
                             <input type="hidden" value="{{$noticeId}}" name="noticeId"/>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">消息内容 :</label>
