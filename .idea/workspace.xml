@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f064888-6080-4377-9006-5c5c638c1a33" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SignUpController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SignUpController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SignUpController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SignUpController.php">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="90" column="98" selection-start-line="90" selection-start-column="98" selection-end-line="90" selection-end-column="98" />
+            <state relative-caret-position="782">
+              <caret line="56" column="105" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -72,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Baby.php" />
         <option value="$PROJECT_DIR$/public/css/my.css" />
@@ -123,6 +121,7 @@
         <option value="$PROJECT_DIR$/resources/views/admin/sign-up.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SignUpController.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
       </list>
     </option>
   </component>
@@ -292,15 +291,15 @@
       <workItem from="1465133413315" duration="2347000" />
       <workItem from="1465221429658" duration="1682000" />
       <workItem from="1465831120465" duration="3462000" />
-      <workItem from="1466001296601" duration="783000" />
+      <workItem from="1466001296601" duration="1328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212557000" />
+    <option name="totallyTimeSpent" value="213102000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="1" />
+    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -341,7 +340,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Service/BannerService.php" />
     <entry file="file://$PROJECT_DIR$/app/Services/BannerService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -786,6 +784,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="90" column="98" selection-start-line="90" selection-start-column="98" selection-end-line="90" selection-end-column="98" />
+          <folding>
+            <marker date="1466002005798" expanded="false" signature="44:232" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="275:4865" placeholder="{...}" />
+            <marker date="1466002005798" expanded="true" signature="285:381" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1466002005798" expanded="true" signature="421:1259" placeholder="{...}" />
+            <marker date="1466002005798" expanded="true" signature="691:739" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="761:779" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="800:862" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="1068:1166" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="1300:1502" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="1555:1891" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="1669:1763" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="1769:1859" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="1943:2110" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="2152:2563" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="2342:2435" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="2441:2531" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="2626:4414" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="2691:2956" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="2977:3025" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3047:3058" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3080:3098" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3119:3181" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3213:3254" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3260:3327" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3363:3570" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3394:3439" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3463:3508" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3514:3560" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3605:3695" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3720:4368" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3763:4367" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="3940:3946" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4023:4356" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4056:4355" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4209:4340" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4380:4385" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4454:4862" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4642:4735" placeholder="..." />
+            <marker date="1466002005798" expanded="true" signature="4741:4831" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="56" column="105" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="105" />
           <folding />
         </state>
       </provider>
