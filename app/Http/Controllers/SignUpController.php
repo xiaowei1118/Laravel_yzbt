@@ -88,7 +88,7 @@ class SignUpController extends Controller
 
     public function exportExcel(Request $request,$noticeId){
         $user=$request->user();
-        $list=SignUp::selectRaw('tb_baby.id,tb_baby.nickname,tb_baby.name,height,weight,tb_baby.living_city,talent,tb_baby.birthdate,tb_baby.sex,tb_pn_apply.image_url as img_url,tb_wx_user.name as parent_name,tb_wx_user.nickname as parent_nick_name,tb_wx_user.telephone,tb_pn_apply.id as count')
+        $list=SignUp::selectRaw('tb_baby.id,tb_baby.nickname,tb_baby.name,height,weight,tb_wx_user.living_city,talent,tb_baby.birthdate,tb_baby.sex,tb_pn_apply.image_url as img_url,tb_wx_user.name as parent_name,tb_wx_user.nickname as parent_nick_name,tb_wx_user.telephone,tb_pn_apply.id as count')
             ->join('tb_baby','tb_pn_apply.baby_id','=','tb_baby.id')
             ->where('is_vote',1)
             ->where('tb_baby.status',1)
